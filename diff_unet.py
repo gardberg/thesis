@@ -357,7 +357,9 @@ class Unet(nn.Module):
         self.final_conv = nn.Sequential(
             block_klass(dim, dim), nn.Conv2d(dim, out_dim, 1))
 
-    def forward(self, x, time):
+    def __call__(self, x, time):
+        # we should define the forward pass in __call__ instead of forward
+        # as wandb hooks are attached to __call__ and not forward
 
         # print("Input shape:", x.shape)
         # print("Time shape:", time.shape)
@@ -456,9 +458,14 @@ def p_sample_loop(model, shape):
     img = torch.randn(shape, device=device)
     imgs = []
 
-    for i in tqdm(reversed(range(0, model.timesteps)), desc="Sampling"):
+    # for i in tqdm(reversed(range(0, model.timesteps)), desc="Sampling"):
+    #     img = p_sample(model, img, torch.full((b,), i, device=device, dtype=torch.long), i)
+    #     imgs.append(img)
+
+    for i in reversed(range(0, model.timesteps)):
         img = p_sample(model, img, torch.full((b,), i, device=device, dtype=torch.long), i)
         imgs.append(img)
+    
     return imgs
 
 
@@ -470,16 +477,18 @@ def sample(model, image_size, batch_size=16, channels=1):
 from tqdm import trange
 from torch.utils.data import DataLoader
 from torch.optim.optimizer import Optimizer
+import wandb
 
 def train(
         model: nn.Module,
         optimizer: Optimizer,
         train_loader: DataLoader, 
         device='cpu', 
-        epochs=1):
+        epochs=1,
+        wandb_log=False,):
 
     losses = []
-    val_losses = []
+    image_size = next(iter(train_loader))[0].shape[-1]
 
     with trange(epochs) as pbar:
         for epoch in pbar:
@@ -503,7 +512,14 @@ def train(
                     pbar.set_postfix(step=step, loss=loss.item())
                     losses.append(loss.item())
 
+                    if wandb_log: wandb.log({"loss": loss.item()})
+
+                if epoch % 10 == 0 and wandb_log:
+                    with torch.no_grad():
+                        im = sample(model, image_size, batch_size=1)[-1][0,0,:,:]
+                        wandb.log({"sample": wandb.Image(im)})
+
                 loss.backward()
                 optimizer.step()
 
-    plt.plot(losses)
+    # plt.plot(losses)
