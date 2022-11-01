@@ -12,25 +12,44 @@ import torch.nn.functional as F
 
 # https://huggingface.co/blog/annotated-diffusion
 
-T = 200
 def linear_beta_schedule(timesteps):
     beta_start = 0.0001
     beta_end = 0.02
     return torch.linspace(beta_start, beta_end, timesteps)
 
 
+def cosine_beta_schedule(timesteps, s=0.008):
+    """
+    cosine schedule as proposed in https://arxiv.org/abs/2102.09672
+    """
+    steps = timesteps + 1
+    x = torch.linspace(0, timesteps, steps)
+    alphas_cumprod = torch.cos(((x / timesteps) + s) / (1 + s) * torch.pi * 0.5) ** 2
+    alphas_cumprod = alphas_cumprod / alphas_cumprod[0]
+    betas = 1 - (alphas_cumprod[1:] / alphas_cumprod[:-1])
+    return torch.clip(betas, 0.0001, 0.9999)
+
+
 # Constant tensors used in sampling functions
-betas = linear_beta_schedule(T)
+# betas = linear_beta_schedule(T)
 
-alphas = 1.0 - betas
-alphas_cumprod = torch.cumprod(alphas, dim=0)
-alphas_cumprod_prev = F.pad(alphas_cumprod[:-1], (1,0), value=1.0)
-sqrt_recip_alphas = torch.sqrt(1.0 / alphas)
 
-sqrt_alphas_cumprod = torch.sqrt(alphas_cumprod)
-sqrt_one_minus_alphas_cumprod = torch.sqrt(1.0 - alphas_cumprod)
+def get_constants(betas):
+  alphas = 1.0 - betas
+  alphas_cumprod = torch.cumprod(alphas, dim=0)
+  alphas_cumprod_prev = F.pad(alphas_cumprod[:-1], (1,0), value=1.0)
+  sqrt_recip_alphas = torch.sqrt(1.0 / alphas)
 
-posterior_variance = betas * (1. - alphas_cumprod_prev) / (1. - alphas_cumprod)
+  sqrt_alphas_cumprod = torch.sqrt(alphas_cumprod)
+  sqrt_one_minus_alphas_cumprod = torch.sqrt(1.0 - alphas_cumprod)
+
+  posterior_variance = betas * (1. - alphas_cumprod_prev) / (1. - alphas_cumprod)
+
+  return  {'alphas_cumprod': alphas_cumprod, 
+          'sqrt_recip_alphas': sqrt_recip_alphas, 
+          'sqrt_alphas_cumprod': sqrt_alphas_cumprod, 
+          'sqrt_one_minus_alphas_cumprod': sqrt_one_minus_alphas_cumprod,
+          'posterior_variance': posterior_variance}
 
 
 # Extract appropriate t index from batch of alphas (?)
@@ -39,9 +58,13 @@ def extract(a: torch.tensor, t: torch.tensor, x_shape: torch.tensor):
     out = a.gather(-1, t.cpu())
     return out.reshape(batch_size, *((1,) * (len(x_shape) - 1))).to(t.device)
 
-def q_sample(x_start, t, noise=None):
+def q_sample(x_start, t, betas, noise=None):
     if noise is None:
         noise = torch.randn_like(x_start)
+
+    consts = get_constants(betas)
+    sqrt_alphas_cumprod = consts['sqrt_alphas_cumprod']
+    sqrt_one_minus_alphas_cumprod = consts['sqrt_one_minus_alphas_cumprod']
 
     sqrt_alphas_cumprod_t = extract(sqrt_alphas_cumprod, t, x_start.shape)
     sqrt_one_minus_alphas_cumprod_t = extract(
@@ -263,8 +286,13 @@ class Unet(nn.Module):
         resnet_block_groups=8,
         convnext_mult=2,
         use_convnext=False,
+        timesteps=200,
+        schedule_f=linear_beta_schedule
     ):
         super().__init__()
+
+        self.timesteps = timesteps
+        self.betas = schedule_f(timesteps)
 
         self.channels = channels
         init_dim = init_dim if init_dim else dim // 3 * 2
@@ -359,3 +387,123 @@ class Unet(nn.Module):
             x = upsample(x)
         
         return self.final_conv(x)
+
+
+def p_losses(model, x_start, t, noise=None, loss_type="l1"):
+    """ Computes the loss for a given model and batch of imgs.
+    Args:   x_start: the input image (batch_size, channels, height, width)
+            t: the time (batch_size,)
+            noise: the noise to add to the input image (batch_size, channels, height, width)
+    """
+    if noise is None:
+        noise = torch.randn_like(x_start)
+
+    x_noisy = q_sample(x_start=x_start, t=t, betas=model.betas, noise=noise)
+    predicted_noise = model(x_noisy, t)
+
+    if loss_type == "l1":
+        loss = F.l1_loss(noise, predicted_noise)
+    elif loss_type == "l2":
+        loss = F.mse_loss(noise, predicted_noise)
+    elif loss_type == "huber":
+        loss = F.smooth_l1_loss(noise, predicted_noise)
+    else:
+        raise ValueError("Loss type not supported.")
+    
+    return loss
+
+
+# Sampling during training
+@torch.no_grad()
+def p_sample(model, x, t, t_index):
+
+    betas_t = extract(model.betas, t, x.shape)
+
+    consts = get_constants(model.betas)
+    sqrt_one_minus_alphas_cumprod = consts['sqrt_one_minus_alphas_cumprod']
+    sqrt_recip_alphas = consts['sqrt_recip_alphas']
+    posterior_variance = consts['posterior_variance']
+
+    sqrt_one_minus_alphas_cumprod_t = extract(
+        sqrt_one_minus_alphas_cumprod, t, x.shape
+    )
+
+    sqrt_recip_alphas_t = extract(sqrt_recip_alphas, t, x.shape)
+
+    # Predict mean
+    model_mean = sqrt_recip_alphas_t * (
+        x - betas_t * model(x, t) / sqrt_one_minus_alphas_cumprod_t
+    )
+
+    # If we're on last sample
+    if t_index == 0:
+        return model_mean
+    else:
+        posterior_variance_t = extract(posterior_variance, t, x.shape)
+        noise = torch.randn_like(x)
+
+        return model_mean + noise * torch.sqrt(posterior_variance_t)
+
+
+# Full sampling loop from noise to image
+
+@torch.no_grad()
+def p_sample_loop(model, shape):
+    device = next(model.parameters()).device
+
+    b = shape[0]
+
+    img = torch.randn(shape, device=device)
+    imgs = []
+
+    for i in tqdm(reversed(range(0, model.timesteps)), desc="Sampling"):
+        img = p_sample(model, img, torch.full((b,), i, device=device, dtype=torch.long), i)
+        imgs.append(img)
+    return imgs
+
+
+@torch.no_grad()
+def sample(model, image_size, batch_size=16, channels=1):
+    return p_sample_loop(model, (batch_size, channels, image_size, image_size))
+
+
+from tqdm import trange
+from torch.utils.data import DataLoader
+from torch.optim.optimizer import Optimizer
+
+def train(
+        model: nn.Module,
+        optimizer: Optimizer,
+        train_loader: DataLoader, 
+        device='cpu', 
+        epochs=1):
+
+    losses = []
+    val_losses = []
+
+    with trange(epochs) as pbar:
+        for epoch in pbar:
+
+            pbar.set_description(f"Epoch {epoch}")
+
+            for step, batch in enumerate(train_loader):
+                optimizer.zero_grad()
+
+                # Actually loading images and labels now in data_loader...
+
+                batch_size = batch[0].shape[0]
+                batch = batch[0].to(device)
+
+                # Sample t uniformally 
+                t = torch.randint(0, model.timesteps, (batch_size,), device=device).long()
+
+                loss = p_losses(model, batch, t, loss_type="huber")
+
+                if step % 10 == 0:
+                    pbar.set_postfix(step=step, loss=loss.item())
+                    losses.append(loss.item())
+
+                loss.backward()
+                optimizer.step()
+
+    plt.plot(losses)
