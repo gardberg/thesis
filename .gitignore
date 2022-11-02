@@ -3,6 +3,7 @@ saved/
 .DS_Store
 *.png
 wandb/
+docker_template/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

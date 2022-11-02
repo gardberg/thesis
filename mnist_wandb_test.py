@@ -29,8 +29,6 @@ mnist = MNIST('./data', train=True, download=True, transform=transform)
 mnist = torch.utils.data.Subset(mnist, range(subs))
 data_loader = DataLoader(mnist, batch_size=batch_size, shuffle=True)
 
-
-
 img = next(iter(data_loader))[0]
 T = 200
 t = torch.randint(0, T, (batch_size,))
