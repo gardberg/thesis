@@ -1,0 +1,277 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Abstract}{2}{section.1}\protected@file@percent }
+\citation{von1791mechanismus}
+\citation{fant1970acoustic}
+\citation{klatt1980software}
+\citation{tan2021survey}
+\citation{zen2009statistical}
+\citation{tan2021survey}
+\citation{ze2013statistical}
+\citation{arik2017deep}
+\citation{oord2016wavenet}
+\citation{krizhevsky2017imagenet}
+\citation{bojarski2016end}
+\citation{zhou2018voxelnet}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Introduction}{5}{section.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Schematic overview of common text-to-speech components. The input text which speech is to be generated for is first analyzed to produce linguistic features. These are then fed into an acoustic model outputting acoustic features, e.g. a mel spectrogram. Lastly the acoustic features are converted into audio using a vocoder model.}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:TTS}{{1}{5}{\onehalfspacing Schematic overview of common text-to-speech components. The input text which speech is to be generated for is first analyzed to produce linguistic features. These are then fed into an acoustic model outputting acoustic features, e.g. a mel spectrogram. Lastly the acoustic features are converted into audio using a vocoder model}{figure.1}{}}
+\citation{oord2016wavenet}
+\citation{kalchbrenner2018efficient}
+\citation{paine2016fast}
+\citation{wang2017tacotron}
+\citation{shen2018natural}
+\citation{rezende2015variational}
+\citation{prenger2019waveglow}
+\citation{kingma2018glow}
+\citation{goodfellow2020generative}
+\citation{donahue2018adversarial}
+\citation{binkowski2019high}
+\citation{kong2020hifi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Previous work}{6}{subsection.2.1}\protected@file@percent }
+\citation{kong2020diffwave}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Problem statement}{7}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Theory}{8}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Sound \& Signals}{8}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:sounds}{{3.1}{8}{Sound \& Signals}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}The Short-time Fourier Transform}{9}{subsubsection.3.1.1}\protected@file@percent }
+\newlabel{sec:stft}{{3.1.1}{9}{The Short-time Fourier Transform}{subsubsection.3.1.1}{}}
+\newlabel{eq:fouriert}{{1}{9}{The Short-time Fourier Transform}{equation.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Waveform, Spectrogram, and Mel Spectrogram representation of the spoken sentence \textit  {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram respectively. Note that the mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal in the form of overtones. A brighter point represents a larger magnitude. Spectrograms were obtained identically as described in section x.}}{10}{figure.2}\protected@file@percent }
+\newlabel{fig:melspec}{{2}{10}{\onehalfspacing Waveform, Spectrogram, and Mel Spectrogram representation of the spoken sentence \textit {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram respectively. Note that the mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal in the form of overtones. A brighter point represents a larger magnitude. Spectrograms were obtained identically as described in section x}{figure.2}{}}
+\citation{stevens1937scale}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}The Mel Spectrogram}{11}{subsubsection.3.1.2}\protected@file@percent }
+\newlabel{sec:melspec}{{3.1.2}{11}{The Mel Spectrogram}{subsubsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Phase Reconstruction Problem}{11}{subsubsection.3.1.3}\protected@file@percent }
+\newlabel{sec:phaseprob}{{3.1.3}{11}{Phase Reconstruction Problem}{subsubsection.3.1.3}{}}
+\citation{kawahara1999restructuring}
+\citation{agiomyrgiannakis2015vocaine}
+\citation{hayes1980signal}
+\citation{auger2012phase}
+\citation{toda2007voice}
+\citation{griffin1984signal}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The process of obtaining a mel spectrogram $\bm  {S}_{\text  {mel}}$ from an original signal $\bm  {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm  {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm  {S}_{\text  {mel}}$ via a transform $\mathcal  {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde  {\bm  {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model.}}{12}{figure.3}\protected@file@percent }
+\newlabel{fig:phasere}{{3}{12}{\onehalfspacing The process of obtaining a mel spectrogram $\bm {S}_{\text {mel}}$ from an original signal $\bm {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm {S}_{\text {mel}}$ via a transform $\mathcal {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde {\bm {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model}{figure.3}{}}
+\citation{wang2017tacotron}
+\citation{prenger2019waveglow}
+\citation{griffin1984signal}
+\citation{albadawy2022vocbench}
+\citation{goodfellow2016deep}
+\citation{foster2019generative}
+\citation{baevski2020wav2vec}
+\citation{devlin2018bert}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Griffin-Lim reconstruction}{13}{subsubsection.3.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Learning Paradigms \& Generative Models}{13}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Neural Networks}{14}{subsubsection.3.2.1}\protected@file@percent }
+\newlabel{eq:perc}{{7}{14}{Neural Networks}{equation.3.7}{}}
+\citation{hornik1989multilayer}
+\citation{lu2020universal}
+\citation{lecun1989backpropagation}
+\citation{goodfellow2016deep}
+\citation{yu2015multi}
+\citation{oord2016wavenet}
+\citation{kong2020diffwave}
+\citation{lee2021priorgrad}
+\citation{oord2016wavenet}
+\citation{tan2021survey}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref  {eq:perc}). The right side of the figure shows the network written in vector form.}}{16}{figure.4}\protected@file@percent }
+\newlabel{fig:NN}{{4}{16}{\onehalfspacing A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref {eq:perc}). The right side of the figure shows the network written in vector form}{figure.4}{}}
+\citation{goodfellow2016deep}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Learning Algorithm}{17}{subsubsection.3.2.2}\protected@file@percent }
+\newlabel{sec:learn}{{3.2.2}{17}{Learning Algorithm}{subsubsection.3.2.2}{}}
+\newlabel{eq:nll}{{12}{17}{Learning Algorithm}{equation.3.12}{}}
+\newlabel{eq:loss}{{13}{17}{Learning Algorithm}{equation.3.13}{}}
+\citation{kingma2014adam}
+\citation{ruder2016overview}
+\citation{paszke2019pytorch}
+\citation{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}
+\citation{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}
+\citation{neal2001annealed}
+\citation{song2019generative}
+\newlabel{eq:nabla}{{15}{18}{Learning Algorithm}{equation.3.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Diffusion models}{18}{subsection.3.3}\protected@file@percent }
+\citation{ho2020denoising}
+\newlabel{eq:diffxt}{{23}{19}{Diffusion models}{equation.3.23}{}}
+\citation{kong2020diffwave}
+\citation{kong2020diffwave}
+\citation{goodfellow2016deep}
+\citation{ho2020denoising}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The reverse and forward diffusion process for a given audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text  {data}}$ is transformed into a sample from a distribution $p_{\text  {latent}}$. This process is then to be reversed through a series of reverse transitional probabilites $p_{\theta }(\bm  {x}_{t-1} \mid \bm  {x}_{t})$. Image adopted from \cite  {kong2020diffwave}.}}{20}{figure.5}\protected@file@percent }
+\newlabel{fig:diffwave1}{{5}{20}{\onehalfspacing The reverse and forward diffusion process for a given audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text {data}}$ is transformed into a sample from a distribution $p_{\text {latent}}$. This process is then to be reversed through a series of reverse transitional probabilites $p_{\theta }(\bm {x}_{t-1} \mid \bm {x}_{t})$. Image adopted from \cite {kong2020diffwave}}{figure.5}{}}
+\newlabel{vlb1}{{25}{20}{Diffusion models}{equation.3.25}{}}
+\newlabel{eq:trainsimple}{{26}{20}{Diffusion models}{equation.3.26}{}}
+\citation{kong2020diffwave}
+\citation{ho2020denoising}
+\citation{rethage2018wavenet}
+\citation{vaswani2017attention}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Training algorithm}}{21}{algorithm.1}\protected@file@percent }
+\newlabel{alg:train}{{1}{21}{Diffusion models}{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Sampling algorithm}}{21}{algorithm.2}\protected@file@percent }
+\newlabel{alg:samp}{{2}{21}{Diffusion models}{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Diffusion-based vocoders}{21}{subsubsection.3.3.1}\protected@file@percent }
+\newlabel{sec:diffvoc}{{3.3.1}{21}{Diffusion-based vocoders}{subsubsection.3.3.1}{}}
+\newlabel{eq:vocloss}{{28}{21}{Diffusion-based vocoders}{equation.3.28}{}}
+\citation{kong2020diffwave}
+\citation{kong2020diffwave}
+\citation{albadawy2022vocbench}
+\citation{ho2020denoising}
+\citation{kong2020diffwave}
+\citation{lee2021priorgrad}
+\citation{nichol2021improved}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Neural network architecture of DiffWave \cite  {kong2020diffwave} which models $\bm  {\varepsilon }_{\theta }: \mathbb  {R}^L \times \mathbb  {N} \times \mathbb  {R}^{m\times n} \to \mathbb  {R}^L$. The conditioner used is in the form of a mel spectrogram $S_{\text  {mel}}$.}}{22}{figure.6}\protected@file@percent }
+\newlabel{fig:diffwavearch}{{6}{22}{\onehalfspacing Neural network architecture of DiffWave \cite {kong2020diffwave} which models $\bm {\varepsilon }_{\theta }: \mathbb {R}^L \times \mathbb {N} \times \mathbb {R}^{m\times n} \to \mathbb {R}^L$. The conditioner used is in the form of a mel spectrogram $S_{\text {mel}}$}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Limitations}{22}{subsubsection.3.3.2}\protected@file@percent }
+\citation{watson2021learning}
+\citation{lam2022bddm}
+\citation{jolicoeur2021gotta}
+\citation{chen2020wavegrad}
+\citation{chen2022infergrad}
+\citation{lam2022bddm}
+\citation{chen2020wavegrad}
+\citation{lee2021priorgrad}
+\citation{lee2021priorgrad}
+\citation{lee2021priorgrad}
+\newlabel{eq:cos}{{29}{23}{Limitations}{equation.3.29}{}}
+\citation{chen2022resgrad}
+\citation{ho2020denoising}
+\citation{kong2020diffwave}
+\citation{nichol2021improved}
+\citation{nichol2021improved}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal  {N}(\bm  {\mu }, \bm  {\Sigma })$ compared to the originally proposed $\mathcal  {N}(\bm  {0}, \bm  {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text  {data}}$ faster \cite  {lee2021priorgrad}.}}{24}{figure.7}\protected@file@percent }
+\newlabel{fig:priorgrad1}{{7}{24}{\onehalfspacing Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal {N}(\bm {\mu }, \bm {\Sigma })$ compared to the originally proposed $\mathcal {N}(\bm {0}, \bm {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text {data}}$ faster \cite {lee2021priorgrad}}{figure.7}{}}
+\citation{chen2020wavegrad}
+\citation{popov2021grad}
+\citation{oord2016wavenet}
+\citation{kong2020diffwave}
+\citation{wang2017tacotron}
+\citation{streijl2016mean}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Evaluation}{25}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:eval}{{3.4}{25}{Evaluation}{subsection.3.4}{}}
+\citation{rix2001perceptual}
+\citation{avila2019non}
+\citation{theis2015note}
+\citation{kong2020hifi}
+\citation{lee2021priorgrad}
+\citation{kilgour2019frechet}
+\citation{hershey2017cnn}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Log-mel Spectrogram Mean Absolute Error (LS-MAE)}{26}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Fréchet Audio Distance}{26}{subsubsection.3.4.2}\protected@file@percent }
+\citation{yamamoto2020parallel}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Peak Signal-to-Noise Ratio (PSNR)}{27}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Multi-resolution STFT Error (MRSE)}{27}{subsubsection.3.4.4}\protected@file@percent }
+\citation{ljspeech17}
+\citation{tan2021survey}
+\citation{kong2020diffwave}
+\citation{lee2021priorgrad}
+\citation{ljspeech17}
+\citation{ljspeech17}
+\citation{zen2019libritts}
+\citation{ardila2019common}
+\citation{gibiansky2017deep}
+\citation{jia2018transfer}
+\citation{arik2018neural}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Data}{29}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Distribution of audio clip lengths in the LJSpeech dataset \cite  {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long.}}{29}{figure.8}\protected@file@percent }
+\newlabel{fig:my_label}{{8}{29}{Distribution of audio clip lengths in the LJSpeech dataset \cite {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long}{figure.8}{}}
+\citation{lee2021priorgrad}
+\citation{chen2020wavegrad}
+\citation{kong2020hifi}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Method}{30}{section.5}\protected@file@percent }
+\citation{yamamoto2020parallel}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{31}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Loss $L_{\text  {simple}}$ per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise.}}{31}{figure.9}\protected@file@percent }
+\newlabel{fig:timestep_loss}{{9}{31}{\onehalfspacing Loss $L_{\text {simple}}$ per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise}{figure.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Vocoder test set results}}{31}{table.1}\protected@file@percent }
+\newlabel{res1}{{1}{31}{Vocoder test set results}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{33}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Future work}{33}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Conclusion}{33}{subsection.7.2}\protected@file@percent }
+\bibstyle{plain}
+\bibdata{refs}
+\bibcite{agiomyrgiannakis2015vocaine}{1}
+\bibcite{albadawy2022vocbench}{2}
+\bibcite{ardila2019common}{3}
+\bibcite{arik2018neural}{4}
+\bibcite{arik2017deep}{5}
+\bibcite{auger2012phase}{6}
+\bibcite{avila2019non}{7}
+\bibcite{baevski2020wav2vec}{8}
+\bibcite{binkowski2019high}{9}
+\bibcite{bojarski2016end}{10}
+\bibcite{chen2020wavegrad}{11}
+\bibcite{chen2022infergrad}{12}
+\bibcite{chen2022resgrad}{13}
+\bibcite{devlin2018bert}{14}
+\bibcite{donahue2018adversarial}{15}
+\bibcite{fant1970acoustic}{16}
+\bibcite{foster2019generative}{17}
+\bibcite{gibiansky2017deep}{18}
+\bibcite{goodfellow2016deep}{19}
+\bibcite{goodfellow2020generative}{20}
+\bibcite{griffin1984signal}{21}
+\bibcite{hayes1980signal}{22}
+\bibcite{hershey2017cnn}{23}
+\bibcite{ho2020denoising}{24}
+\bibcite{hornik1989multilayer}{25}
+\bibcite{ljspeech17}{26}
+\bibcite{jia2018transfer}{27}
+\bibcite{jolicoeur2021gotta}{28}
+\bibcite{kalchbrenner2018efficient}{29}
+\bibcite{kawahara1999restructuring}{30}
+\bibcite{kilgour2019frechet}{31}
+\bibcite{kingma2014adam}{32}
+\bibcite{kingma2018glow}{33}
+\bibcite{klatt1980software}{34}
+\bibcite{kong2020hifi}{35}
+\bibcite{kong2020diffwave}{36}
+\bibcite{krizhevsky2017imagenet}{37}
+\bibcite{lam2022bddm}{38}
+\bibcite{lecun1989backpropagation}{39}
+\bibcite{lee2021priorgrad}{40}
+\bibcite{lu2020universal}{41}
+\bibcite{neal2001annealed}{42}
+\bibcite{nichol2021improved}{43}
+\bibcite{oord2016wavenet}{44}
+\bibcite{paine2016fast}{45}
+\bibcite{paszke2019pytorch}{46}
+\bibcite{popov2021grad}{47}
+\bibcite{prenger2019waveglow}{48}
+\bibcite{rethage2018wavenet}{49}
+\bibcite{rezende2015variational}{50}
+\bibcite{rix2001perceptual}{51}
+\bibcite{ruder2016overview}{52}
+\bibcite{shen2018natural}{53}
+\bibcite{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}{54}
+\bibcite{song2019generative}{55}
+\bibcite{stevens1937scale}{56}
+\bibcite{streijl2016mean}{57}
+\bibcite{tan2021survey}{58}
+\bibcite{theis2015note}{59}
+\bibcite{toda2007voice}{60}
+\bibcite{vaswani2017attention}{61}
+\bibcite{von1791mechanismus}{62}
+\bibcite{wang2017tacotron}{63}
+\bibcite{watson2021learning}{64}
+\bibcite{yamamoto2020parallel}{65}
+\bibcite{yu2015multi}{66}
+\bibcite{ze2013statistical}{67}
+\bibcite{zen2019libritts}{68}
+\bibcite{zen2009statistical}{69}
+\bibcite{zhou2018voxelnet}{70}
+\gdef \@abspage@last{39}

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--there's a number but no series in fant1970acoustic
+Warning--empty journal in Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015
+Warning--there's a number but no volume in Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015
+You've used 73 entries,
+            2118 wiz_defined-function locations,
+            865 strings with 18823 characters,
+and the built_in function-call counts, 30160 in all, are:
+= -- 2920
+> -- 1866
+< -- 21
++ -- 743
+- -- 662
+* -- 2236
+:= -- 5017
+add.period$ -- 239
+call.type$ -- 73
+change.case$ -- 541
+chr.to.int$ -- 0
+cite$ -- 76
+duplicate$ -- 1033
+empty$ -- 1992
+format.name$ -- 662
+if$ -- 6229
+int.to.chr$ -- 0
+int.to.str$ -- 73
+missing$ -- 75
+newline$ -- 369
+num.names$ -- 146
+pop$ -- 580
+preamble$ -- 1
+purify$ -- 472
+quote$ -- 0
+skip$ -- 782
+stack$ -- 0
+substring$ -- 1634
+swap$ -- 295
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 284
+warning$ -- 3
+while$ -- 243
+width$ -- 75
+write$ -- 797
+(There were 3 warnings)

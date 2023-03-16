@@ -1,0 +1,433 @@
+\begin{thebibliography}{10}
+
+\bibitem{agiomyrgiannakis2015vocaine}
+Yannis Agiomyrgiannakis.
+\newblock Vocaine the vocoder and applications in speech synthesis.
+\newblock In {\em 2015 IEEE international conference on acoustics, speech and
+  signal processing (ICASSP)}, pages 4230--4234. IEEE, 2015.
+
+\bibitem{albadawy2022vocbench}
+Ehab~A AlBadawy, Andrew Gibiansky, Qing He, Jilong Wu, Ming-Ching Chang, and
+  Siwei Lyu.
+\newblock Vocbench: A neural vocoder benchmark for speech synthesis.
+\newblock In {\em ICASSP 2022-2022 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 881--885. IEEE, 2022.
+
+\bibitem{ardila2019common}
+Rosana Ardila, Megan Branson, Kelly Davis, Michael Henretty, Michael Kohler,
+  Josh Meyer, Reuben Morais, Lindsay Saunders, Francis~M Tyers, and Gregor
+  Weber.
+\newblock Common voice: A massively-multilingual speech corpus.
+\newblock {\em arXiv preprint arXiv:1912.06670}, 2019.
+
+\bibitem{arik2018neural}
+Sercan Arik, Jitong Chen, Kainan Peng, Wei Ping, and Yanqi Zhou.
+\newblock Neural voice cloning with a few samples.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{arik2017deep}
+Sercan~{\"O} Ar{\i}k, Mike Chrzanowski, Adam Coates, Gregory Diamos, Andrew
+  Gibiansky, Yongguo Kang, Xian Li, John Miller, Andrew Ng, Jonathan Raiman,
+  et~al.
+\newblock Deep voice: Real-time neural text-to-speech.
+\newblock In {\em International Conference on Machine Learning}, pages
+  195--204. PMLR, 2017.
+
+\bibitem{auger2012phase}
+Fran{\c{c}}ois Auger, {\'E}ric Chassande-Mottin, and Patrick Flandrin.
+\newblock On phase-magnitude relationships in the short-time fourier transform.
+\newblock {\em IEEE Signal Processing Letters}, 19(5):267--270, 2012.
+
+\bibitem{avila2019non}
+Anderson~R Avila, Hannes Gamper, Chandan Reddy, Ross Cutler, Ivan Tashev, and
+  Johannes Gehrke.
+\newblock Non-intrusive speech quality assessment using neural networks.
+\newblock In {\em ICASSP 2019-2019 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 631--635. IEEE, 2019.
+
+\bibitem{baevski2020wav2vec}
+Alexei Baevski, Yuhao Zhou, Abdelrahman Mohamed, and Michael Auli.
+\newblock wav2vec 2.0: A framework for self-supervised learning of speech
+  representations.
+\newblock {\em Advances in Neural Information Processing Systems},
+  33:12449--12460, 2020.
+
+\bibitem{binkowski2019high}
+Miko{\l}aj Bi{\'n}kowski, Jeff Donahue, Sander Dieleman, Aidan Clark, Erich
+  Elsen, Norman Casagrande, Luis~C Cobo, and Karen Simonyan.
+\newblock High fidelity speech synthesis with adversarial networks.
+\newblock {\em arXiv preprint arXiv:1909.11646}, 2019.
+
+\bibitem{bojarski2016end}
+Mariusz Bojarski, Davide Del~Testa, Daniel Dworakowski, Bernhard Firner, Beat
+  Flepp, Prasoon Goyal, Lawrence~D Jackel, Mathew Monfort, Urs Muller, Jiakai
+  Zhang, et~al.
+\newblock End to end learning for self-driving cars.
+\newblock {\em arXiv preprint arXiv:1604.07316}, 2016.
+
+\bibitem{chen2020wavegrad}
+Nanxin Chen, Yu~Zhang, Heiga Zen, Ron~J Weiss, Mohammad Norouzi, and William
+  Chan.
+\newblock Wavegrad: Estimating gradients for waveform generation.
+\newblock {\em arXiv preprint arXiv:2009.00713}, 2020.
+
+\bibitem{chen2022infergrad}
+Zehua Chen, Xu~Tan, Ke~Wang, Shifeng Pan, Danilo Mandic, Lei He, and Sheng
+  Zhao.
+\newblock Infergrad: Improving diffusion models for vocoder by considering
+  inference in training.
+\newblock In {\em ICASSP 2022-2022 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 8432--8436. IEEE, 2022.
+
+\bibitem{chen2022resgrad}
+Zehua Chen, Yihan Wu, Yichong Leng, Jiawei Chen, Haohe Liu, Xu~Tan, Yang Cui,
+  Ke~Wang, Lei He, Sheng Zhao, et~al.
+\newblock Resgrad: Residual denoising diffusion probabilistic models for text
+  to speech.
+\newblock {\em arXiv preprint arXiv:2212.14518}, 2022.
+
+\bibitem{devlin2018bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem{donahue2018adversarial}
+Chris Donahue, Julian McAuley, and Miller Puckette.
+\newblock Adversarial audio synthesis.
+\newblock {\em arXiv preprint arXiv:1802.04208}, 2018.
+
+\bibitem{fant1970acoustic}
+Gunnar Fant.
+\newblock {\em Acoustic theory of speech production}.
+\newblock Number~2. Walter de Gruyter, 1970.
+
+\bibitem{foster2019generative}
+David Foster.
+\newblock {\em Generative deep learning: teaching machines to paint, write,
+  compose, and play}.
+\newblock O'Reilly Media, 2019.
+
+\bibitem{gibiansky2017deep}
+Andrew Gibiansky, Sercan Arik, Gregory Diamos, John Miller, Kainan Peng, Wei
+  Ping, Jonathan Raiman, and Yanqi Zhou.
+\newblock Deep voice 2: Multi-speaker neural text-to-speech.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+\bibitem{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep learning}.
+\newblock MIT press, 2016.
+
+\bibitem{goodfellow2020generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
+  Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial networks.
+\newblock {\em Communications of the ACM}, 63(11):139--144, 2020.
+
+\bibitem{griffin1984signal}
+Daniel Griffin and Jae Lim.
+\newblock Signal estimation from modified short-time fourier transform.
+\newblock {\em IEEE Transactions on acoustics, speech, and signal processing},
+  32(2):236--243, 1984.
+
+\bibitem{hayes1980signal}
+Monson Hayes, Jae Lim, and Alan Oppenheim.
+\newblock Signal reconstruction from phase or magnitude.
+\newblock {\em IEEE Transactions on Acoustics, Speech, and Signal Processing},
+  28(6):672--680, 1980.
+
+\bibitem{hershey2017cnn}
+Shawn Hershey, Sourish Chaudhuri, Daniel~PW Ellis, Jort~F Gemmeke, Aren Jansen,
+  R~Channing Moore, Manoj Plakal, Devin Platt, Rif~A Saurous, Bryan Seybold,
+  et~al.
+\newblock Cnn architectures for large-scale audio classification.
+\newblock In {\em 2017 ieee international conference on acoustics, speech and
+  signal processing (icassp)}, pages 131--135. IEEE, 2017.
+
+\bibitem{ho2020denoising}
+Jonathan Ho, Ajay Jain, and Pieter Abbeel.
+\newblock Denoising diffusion probabilistic models.
+\newblock {\em Advances in Neural Information Processing Systems},
+  33:6840--6851, 2020.
+
+\bibitem{hornik1989multilayer}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock {\em Neural networks}, 2(5):359--366, 1989.
+
+\bibitem{ljspeech17}
+Keith Ito and Linda Johnson.
+\newblock The lj speech dataset.
+\newblock \url{https://keithito.com/LJ-Speech-Dataset/}, 2017.
+
+\bibitem{jia2018transfer}
+Ye~Jia, Yu~Zhang, Ron Weiss, Quan Wang, Jonathan Shen, Fei Ren, Patrick Nguyen,
+  Ruoming Pang, Ignacio Lopez~Moreno, Yonghui Wu, et~al.
+\newblock Transfer learning from speaker verification to multispeaker
+  text-to-speech synthesis.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{jolicoeur2021gotta}
+Alexia Jolicoeur-Martineau, Ke~Li, R{\'e}mi Pich{\'e}-Taillefer, Tal Kachman,
+  and Ioannis Mitliagkas.
+\newblock Gotta go fast when generating data with score-based models.
+\newblock {\em arXiv preprint arXiv:2105.14080}, 2021.
+
+\bibitem{kalchbrenner2018efficient}
+Nal Kalchbrenner, Erich Elsen, Karen Simonyan, Seb Noury, Norman Casagrande,
+  Edward Lockhart, Florian Stimberg, Aaron Oord, Sander Dieleman, and Koray
+  Kavukcuoglu.
+\newblock Efficient neural audio synthesis.
+\newblock In {\em International Conference on Machine Learning}, pages
+  2410--2419. PMLR, 2018.
+
+\bibitem{kawahara1999restructuring}
+Hideki Kawahara, Ikuyo Masuda-Katsuse, and Alain De~Cheveigne.
+\newblock Restructuring speech representations using a pitch-adaptive
+  time--frequency smoothing and an instantaneous-frequency-based f0 extraction:
+  Possible role of a repetitive structure in sounds.
+\newblock {\em Speech communication}, 27(3-4):187--207, 1999.
+
+\bibitem{kilgour2019frechet}
+Kevin Kilgour, Mauricio Zuluaga, Dominik Roblek, and Matthew Sharifi.
+\newblock Fr{\'e}chet audio distance: A reference-free metric for evaluating
+  music enhancement algorithms.
+\newblock In {\em INTERSPEECH}, pages 2350--2354, 2019.
+
+\bibitem{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem{kingma2018glow}
+Durk~P Kingma and Prafulla Dhariwal.
+\newblock Glow: Generative flow with invertible 1x1 convolutions.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{klatt1980software}
+Dennis~H Klatt.
+\newblock Software for a cascade/parallel formant synthesizer.
+\newblock {\em the Journal of the Acoustical Society of America},
+  67(3):971--995, 1980.
+
+\bibitem{kong2020hifi}
+Jungil Kong, Jaehyeon Kim, and Jaekyoung Bae.
+\newblock Hifi-gan: Generative adversarial networks for efficient and high
+  fidelity speech synthesis.
+\newblock {\em Advances in Neural Information Processing Systems},
+  33:17022--17033, 2020.
+
+\bibitem{kong2020diffwave}
+Zhifeng Kong, Wei Ping, Jiaji Huang, Kexin Zhao, and Bryan Catanzaro.
+\newblock Diffwave: A versatile diffusion model for audio synthesis.
+\newblock {\em arXiv preprint arXiv:2009.09761}, 2020.
+
+\bibitem{krizhevsky2017imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock {\em Communications of the ACM}, 60(6):84--90, 2017.
+
+\bibitem{lam2022bddm}
+Max~WY Lam, Jun Wang, Dan Su, and Dong Yu.
+\newblock Bddm: Bilateral denoising diffusion models for fast and high-quality
+  speech synthesis.
+\newblock {\em arXiv preprint arXiv:2203.13508}, 2022.
+
+\bibitem{lecun1989backpropagation}
+Yann LeCun, Bernhard Boser, John~S Denker, Donnie Henderson, Richard~E Howard,
+  Wayne Hubbard, and Lawrence~D Jackel.
+\newblock Backpropagation applied to handwritten zip code recognition.
+\newblock {\em Neural computation}, 1(4):541--551, 1989.
+
+\bibitem{lee2021priorgrad}
+Sang-gil Lee, Heeseung Kim, Chaehun Shin, Xu~Tan, Chang Liu, Qi~Meng, Tao Qin,
+  Wei Chen, Sungroh Yoon, and Tie-Yan Liu.
+\newblock Priorgrad: Improving conditional denoising diffusion models with
+  data-driven adaptive prior.
+\newblock {\em arXiv preprint arXiv:2106.06406}, 2021.
+
+\bibitem{lu2020universal}
+Yulong Lu and Jianfeng Lu.
+\newblock A universal approximation theorem of deep neural networks for
+  expressing probability distributions.
+\newblock {\em Advances in neural information processing systems},
+  33:3094--3105, 2020.
+
+\bibitem{neal2001annealed}
+Radford~M Neal.
+\newblock Annealed importance sampling.
+\newblock {\em Statistics and computing}, 11(2):125--139, 2001.
+
+\bibitem{nichol2021improved}
+Alexander~Quinn Nichol and Prafulla Dhariwal.
+\newblock Improved denoising diffusion probabilistic models.
+\newblock In {\em International Conference on Machine Learning}, pages
+  8162--8171. PMLR, 2021.
+
+\bibitem{oord2016wavenet}
+Aaron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals,
+  Alex Graves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio.
+\newblock {\em arXiv preprint arXiv:1609.03499}, 2016.
+
+\bibitem{paine2016fast}
+Tom~Le Paine, Pooya Khorrami, Shiyu Chang, Yang Zhang, Prajit Ramachandran,
+  Mark~A Hasegawa-Johnson, and Thomas~S Huang.
+\newblock Fast wavenet generation algorithm.
+\newblock {\em arXiv preprint arXiv:1611.09482}, 2016.
+
+\bibitem{paszke2019pytorch}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et~al.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock {\em Advances in neural information processing systems}, 32, 2019.
+
+\bibitem{popov2021grad}
+Vadim Popov, Ivan Vovk, Vladimir Gogoryan, Tasnima Sadekova, and Mikhail
+  Kudinov.
+\newblock Grad-tts: A diffusion probabilistic model for text-to-speech.
+\newblock In {\em International Conference on Machine Learning}, pages
+  8599--8608. PMLR, 2021.
+
+\bibitem{prenger2019waveglow}
+Ryan Prenger, Rafael Valle, and Bryan Catanzaro.
+\newblock Waveglow: A flow-based generative network for speech synthesis.
+\newblock In {\em ICASSP 2019-2019 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 3617--3621. IEEE, 2019.
+
+\bibitem{rethage2018wavenet}
+Dario Rethage, Jordi Pons, and Xavier Serra.
+\newblock A wavenet for speech denoising.
+\newblock In {\em 2018 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pages 5069--5073. IEEE, 2018.
+
+\bibitem{rezende2015variational}
+Danilo Rezende and Shakir Mohamed.
+\newblock Variational inference with normalizing flows.
+\newblock In {\em International conference on machine learning}, pages
+  1530--1538. PMLR, 2015.
+
+\bibitem{rix2001perceptual}
+Antony~W Rix, John~G Beerends, Michael~P Hollier, and Andries~P Hekstra.
+\newblock Perceptual evaluation of speech quality (pesq)-a new method for
+  speech quality assessment of telephone networks and codecs.
+\newblock In {\em 2001 IEEE international conference on acoustics, speech, and
+  signal processing. Proceedings (Cat. No. 01CH37221)}, volume~2, pages
+  749--752. IEEE, 2001.
+
+\bibitem{ruder2016overview}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms.
+\newblock {\em arXiv preprint arXiv:1609.04747}, 2016.
+
+\bibitem{shen2018natural}
+Jonathan Shen, Ruoming Pang, Ron~J Weiss, Mike Schuster, Navdeep Jaitly,
+  Zongheng Yang, Zhifeng Chen, Yu~Zhang, Yuxuan Wang, Rj~Skerrv-Ryan, et~al.
+\newblock Natural tts synthesis by conditioning wavenet on mel spectrogram
+  predictions.
+\newblock In {\em 2018 IEEE international conference on acoustics, speech and
+  signal processing (ICASSP)}, pages 4779--4783. IEEE, 2018.
+
+\bibitem{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}
+Jascha Sohl-Dickstein, Eric~A. Weiss, Niru Maheswaranathan, and Surya Ganguli.
+\newblock Deep unsupervised learning using nonequilibrium thermodynamics.
+\newblock (arXiv:1503.03585), Nov 2015.
+\newblock arXiv:1503.03585 [cond-mat, q-bio, stat].
+
+\bibitem{song2019generative}
+Yang Song and Stefano Ermon.
+\newblock Generative modeling by estimating gradients of the data distribution.
+\newblock {\em Advances in Neural Information Processing Systems}, 32, 2019.
+
+\bibitem{stevens1937scale}
+Stanley~Smith Stevens, John Volkmann, and Edwin~Broomell Newman.
+\newblock A scale for the measurement of the psychological magnitude pitch.
+\newblock {\em The journal of the acoustical society of america},
+  8(3):185--190, 1937.
+
+\bibitem{streijl2016mean}
+Robert~C Streijl, Stefan Winkler, and David~S Hands.
+\newblock Mean opinion score (mos) revisited: methods and applications,
+  limitations and alternatives.
+\newblock {\em Multimedia Systems}, 22(2):213--227, 2016.
+
+\bibitem{tan2021survey}
+Xu~Tan, Tao Qin, Frank Soong, and Tie-Yan Liu.
+\newblock A survey on neural speech synthesis.
+\newblock {\em arXiv preprint arXiv:2106.15561}, 2021.
+
+\bibitem{theis2015note}
+Lucas Theis, A{\"a}ron van~den Oord, and Matthias Bethge.
+\newblock A note on the evaluation of generative models.
+\newblock {\em arXiv preprint arXiv:1511.01844}, 2015.
+
+\bibitem{toda2007voice}
+Tomoki Toda, Alan~W Black, and Keiichi Tokuda.
+\newblock Voice conversion based on maximum-likelihood estimation of spectral
+  parameter trajectory.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  15(8):2222--2235, 2007.
+
+\bibitem{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+\bibitem{von1791mechanismus}
+Wolfgang Von~Kempelen, Ritter von~Kempelen de~P{\'a}zm{\'a}nd, Autriche
+  M{\'e}canicien, Ritter von~Kempelen de~P{\'a}zm{\'a}nd, {\"O}sterreich
+  Mechaniker, Ritter von~Kempelen de~P{\'a}zm{\'a}nd, and Austria Mechanic.
+\newblock {\em Mechanismus der menschlichen Sprache nebst der Beschreibung
+  seiner sprechenden Maschine}.
+\newblock Bei JV Degen, 1791.
+
+\bibitem{wang2017tacotron}
+Yuxuan Wang, RJ~Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron~J Weiss, Navdeep
+  Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, et~al.
+\newblock Tacotron: Towards end-to-end speech synthesis.
+\newblock {\em arXiv preprint arXiv:1703.10135}, 2017.
+
+\bibitem{watson2021learning}
+Daniel Watson, Jonathan Ho, Mohammad Norouzi, and William Chan.
+\newblock Learning to efficiently sample from diffusion probabilistic models.
+\newblock {\em arXiv preprint arXiv:2106.03802}, 2021.
+
+\bibitem{yamamoto2020parallel}
+Ryuichi Yamamoto, Eunwoo Song, and Jae-Min Kim.
+\newblock Parallel wavegan: A fast waveform generation model based on
+  generative adversarial networks with multi-resolution spectrogram.
+\newblock In {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 6199--6203. IEEE, 2020.
+
+\bibitem{yu2015multi}
+Fisher Yu and Vladlen Koltun.
+\newblock Multi-scale context aggregation by dilated convolutions.
+\newblock {\em arXiv preprint arXiv:1511.07122}, 2015.
+
+\bibitem{ze2013statistical}
+Heiga Ze, Andrew Senior, and Mike Schuster.
+\newblock Statistical parametric speech synthesis using deep neural networks.
+\newblock In {\em 2013 ieee international conference on acoustics, speech and
+  signal processing}, pages 7962--7966. IEEE, 2013.
+
+\bibitem{zen2019libritts}
+Heiga Zen, Viet Dang, Rob Clark, Yu~Zhang, Ron~J Weiss, Ye~Jia, Zhifeng Chen,
+  and Yonghui Wu.
+\newblock Libritts: A corpus derived from librispeech for text-to-speech.
+\newblock {\em arXiv preprint arXiv:1904.02882}, 2019.
+
+\bibitem{zen2009statistical}
+Heiga Zen, Keiichi Tokuda, and Alan~W Black.
+\newblock Statistical parametric speech synthesis.
+\newblock {\em speech communication}, 51(11):1039--1064, 2009.
+
+\bibitem{zhou2018voxelnet}
+Yin Zhou and Oncel Tuzel.
+\newblock Voxelnet: End-to-end learning for point cloud based 3d object
+  detection.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 4490--4499, 2018.
+
+\end{thebibliography}

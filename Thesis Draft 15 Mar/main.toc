@@ -1,0 +1,45 @@
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Previous Work}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problem statement}{7}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Theory}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sound \& Signals}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}The Short-Time Fourier Transform}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The Mel Spectrogram}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Spectral Flatness}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}The Phase Reconstruction Problem}{13}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Griffin-Lim reconstruction}{14}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Learning Paradigms \& Generative Models}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Neural Networks}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Learning Algorithm}{19}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Diffusion models}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Diffusion-based vocoders}{25}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Limitations}{27}{subsection.2.3.2}%
+\contentsline {subsubsection}{Variance Schedules}{27}{section*.3}%
+\contentsline {subsubsection}{The Inverse Quadratic Schedule}{30}{section*.4}%
+\contentsline {subsubsection}{Noise Prior}{31}{section*.5}%
+\contentsline {subsubsection}{Importance Sampling}{33}{section*.6}%
+\contentsline {section}{\numberline {2.4}Evaluation}{34}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Log-mel Spectrogram Mean Absolute Error (LS-MAE)}{35}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Peak Signal-to-Noise Ratio (PSNR)}{35}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Multi-resolution STFT Error (MRSE)}{36}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Approximate MOS (AMOS)}{36}{subsection.2.4.4}%
+\contentsline {chapter}{\numberline {3}Data}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}LJSpeech}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}LibriTTS}{38}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Method \& Results}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Experiment Settings}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Variance Schedules}{40}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Importance Sampling}{42}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Noise Prior}{44}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Model Size}{45}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Inference Speed}{47}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Longer Training}{49}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Discussion}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Variance Schedules}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Importance Sampling}{52}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Noise Prior}{52}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Size, Speed, \& Training Time}{53}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Evaluation Methods}{54}{section.5.5}%
+\contentsline {section}{\numberline {5.6}General Observations}{54}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusion}{56}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future work}{56}{section.6.1}%
