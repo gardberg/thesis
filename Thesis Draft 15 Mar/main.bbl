@@ -392,6 +392,13 @@ Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
 \newblock Attention is all you need.
 \newblock {\em Advances in neural information processing systems}, 30, 2017.
 
+\bibitem{veaux2017cstr}
+Christophe Veaux, Junichi Yamagishi, Kirsten MacDonald, et~al.
+\newblock Cstr vctk corpus: English multi-speaker corpus for cstr voice cloning
+  toolkit.
+\newblock {\em University of Edinburgh. The Centre for Speech Technology
+  Research (CSTR)}, 2017.
+
 \bibitem{von1791mechanismus}
 Wolfgang Von~Kempelen, Ritter von~Kempelen de~P{\'a}zm{\'a}nd, Autriche
   M{\'e}canicien, Ritter von~Kempelen de~P{\'a}zm{\'a}nd, {\"O}sterreich

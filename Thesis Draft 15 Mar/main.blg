@@ -6,45 +6,45 @@ Database file #1: refs.bib
 Warning--there's a number but no series in fant1970acoustic
 Warning--empty journal in Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015
 Warning--there's a number but no volume in Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015
-You've used 73 entries,
+You've used 74 entries,
             2118 wiz_defined-function locations,
-            865 strings with 18823 characters,
-and the built_in function-call counts, 30160 in all, are:
-= -- 2920
-> -- 1866
+            869 strings with 19060 characters,
+and the built_in function-call counts, 30459 in all, are:
+= -- 2947
+> -- 1889
 < -- 21
-+ -- 743
-- -- 662
-* -- 2236
-:= -- 5017
-add.period$ -- 239
-call.type$ -- 73
-change.case$ -- 541
++ -- 752
+- -- 670
+* -- 2256
+:= -- 5074
+add.period$ -- 242
+call.type$ -- 74
+change.case$ -- 547
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 1033
-empty$ -- 1992
-format.name$ -- 662
-if$ -- 6229
+cite$ -- 77
+duplicate$ -- 1043
+empty$ -- 2009
+format.name$ -- 670
+if$ -- 6287
 int.to.chr$ -- 0
-int.to.str$ -- 73
-missing$ -- 75
-newline$ -- 369
-num.names$ -- 146
-pop$ -- 580
+int.to.str$ -- 74
+missing$ -- 76
+newline$ -- 374
+num.names$ -- 148
+pop$ -- 586
 preamble$ -- 1
-purify$ -- 472
+purify$ -- 477
 quote$ -- 0
-skip$ -- 782
+skip$ -- 790
 stack$ -- 0
-substring$ -- 1634
-swap$ -- 295
+substring$ -- 1639
+swap$ -- 296
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 284
+type$ -- 288
 warning$ -- 3
-while$ -- 243
-width$ -- 75
-write$ -- 797
+while$ -- 245
+width$ -- 76
+write$ -- 807
 (There were 3 warnings)

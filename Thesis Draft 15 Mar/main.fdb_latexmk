@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1678963032 "main.aux" "main.bbl" "main" 1678963049
+["bibtex main"] 1679068320 "main.aux" "main.bbl" "main" 1679068338
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1678963049 47116 08dccc9d9d0a500d0f25ce722da2576b "pdflatex"
-  "refs.bib" 1678910656 27704 d29ed847ec9b314b2472aa5534073c63 ""
+  "main.aux" 1679068337 47323 8f5686cff1f53937a65a2514a12ecf07 "pdflatex"
+  "refs.bib" 1679065809 28008 91d3e98155921c3c05da34e7338e93fb ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1678963033 "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" "main.pdf" "main" 1678963049
-  "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" 1678962993 164913 5e291a42af9b8fb1340c695e443d276e ""
+["pdflatex"] 1679068320 "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" "main.pdf" "main" 1679068338
+  "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" 1679068196 166226 108c9f112e7d8f9d3f6bb7978c75b5b3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -169,11 +169,11 @@
   "images/time_step_loss.png" 1678910656 255392 0bdeea0ffc0e5347b6e64d8aad1d7b1f ""
   "images/viper.png" 1678910656 4312871 32009fc9bc22b49ada0d8e0645fca96c ""
   "images/weighted_loss_variance.png" 1678910656 722983 68a7fa1d3e1fe0a0d922a5dbb4775b8e ""
-  "main.aux" 1678963049 47116 08dccc9d9d0a500d0f25ce722da2576b "pdflatex"
-  "main.bbl" 1678963033 18924 a4b010f1e846630f3692baf11082afc9 "bibtex main"
-  "main.out" 1678963049 6199 fe66c081da713a4fab31469bafdab672 "pdflatex"
-  "main.tex" 1678962993 164913 5e291a42af9b8fb1340c695e443d276e ""
-  "main.toc" 1678963049 3625 47051f2efe2e8c62e87062454057b05b "pdflatex"
+  "main.aux" 1679068337 47323 8f5686cff1f53937a65a2514a12ecf07 "pdflatex"
+  "main.bbl" 1679068320 19202 e0ecd11eee8f1363eda8a81d02155dbd "bibtex main"
+  "main.out" 1679068337 6199 fe66c081da713a4fab31469bafdab672 "pdflatex"
+  "main.tex" 1679068196 166226 108c9f112e7d8f9d3f6bb7978c75b5b3 ""
+  "main.toc" 1679068337 3625 47051f2efe2e8c62e87062454057b05b "pdflatex"
   "packages.tex" 1678910656 376 15dbb622a564b55c29a269255af54688 ""
   (generated)
   "main.aux"
