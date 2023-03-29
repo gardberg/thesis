@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1679068320 "main.aux" "main.bbl" "main" 1679068338
+["bibtex main"] 1680090982 "main.aux" "main.bbl" "main" 1680091000
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1679068337 47323 8f5686cff1f53937a65a2514a12ecf07 "pdflatex"
-  "refs.bib" 1679065809 28008 91d3e98155921c3c05da34e7338e93fb ""
+  "main.aux" 1680090999 47089 57c691ffbd4164fec735e49542b95bde "pdflatex"
+  "refs.bib" 1680089325 22881 47075be3d06f432a16ad4ce30fc7e65f ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1679068320 "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" "main.pdf" "main" 1679068338
-  "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" 1679068196 166226 108c9f112e7d8f9d3f6bb7978c75b5b3 ""
+["pdflatex"] 1680090982 "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" "main.pdf" "main" 1680091000
+  "/Users/lukgar/Desktop/repos/thesis/Thesis Draft 15 Mar/main.tex" 1680090902 167570 9c86cd760310ac54b36f41f974e57edc ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -155,7 +155,7 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "images/LJ_distr.png" 1678910656 285189 0cc02a208bba7bc36b04cb8e1d5db2eb ""
   "images/NN.png" 1678910656 60352 0ee3e4d297d93c331ef1123dcb19db4d ""
-  "images/Phase_reconstruction.png" 1678910656 476567 42e7685ff119c06d2b6494ea5ddc3798 ""
+  "images/Phase_reconstruction.png" 1680084687 195213 d96abf94f449adeaf1f2e83dc0c63f50 ""
   "images/TTS.jpg" 1678910656 96896 4a12013bc9d8b8ecfd4173c4e65254c2 ""
   "images/diffwave_arch.png" 1678910656 242054 6699f9e00cb0df4a3ba20dba23313d5a ""
   "images/diffwave_process.png" 1678910656 192928 251422a0654609f32dedd3c71c6e127d ""
@@ -167,13 +167,13 @@
   "images/scaled2.png" 1678910656 785051 566767a4ae54163d1fd028fed499dd0f ""
   "images/schedules.png" 1678910656 688998 f5ea4403482deeb06dba23f0f3e8c534 ""
   "images/time_step_loss.png" 1678910656 255392 0bdeea0ffc0e5347b6e64d8aad1d7b1f ""
-  "images/viper.png" 1678910656 4312871 32009fc9bc22b49ada0d8e0645fca96c ""
+  "images/viper.png" 1679503256 4312179 8c21022892c8bf76b49766e63db735dd ""
   "images/weighted_loss_variance.png" 1678910656 722983 68a7fa1d3e1fe0a0d922a5dbb4775b8e ""
-  "main.aux" 1679068337 47323 8f5686cff1f53937a65a2514a12ecf07 "pdflatex"
-  "main.bbl" 1679068320 19202 e0ecd11eee8f1363eda8a81d02155dbd "bibtex main"
-  "main.out" 1679068337 6199 fe66c081da713a4fab31469bafdab672 "pdflatex"
-  "main.tex" 1679068196 166226 108c9f112e7d8f9d3f6bb7978c75b5b3 ""
-  "main.toc" 1679068337 3625 47051f2efe2e8c62e87062454057b05b "pdflatex"
+  "main.aux" 1680090999 47089 57c691ffbd4164fec735e49542b95bde "pdflatex"
+  "main.bbl" 1680090982 19202 e0ecd11eee8f1363eda8a81d02155dbd "bibtex main"
+  "main.out" 1680090999 6199 fe66c081da713a4fab31469bafdab672 "pdflatex"
+  "main.tex" 1680090902 167570 9c86cd760310ac54b36f41f974e57edc ""
+  "main.toc" 1680090999 3625 4826a4d0bda5ba6cf091e51e2b9c3fee "pdflatex"
   "packages.tex" 1678910656 376 15dbb622a564b55c29a269255af54688 ""
   (generated)
   "main.aux"

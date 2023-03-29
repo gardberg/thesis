@@ -58,17 +58,17 @@
 \newlabel{sec:stft}{{2.1.1}{9}{The Short-Time Fourier Transform}{subsection.2.1.1}{}}
 \newlabel{eq:fouriert}{{2.1}{9}{The Short-Time Fourier Transform}{equation.2.1.1}{}}
 \newlabel{eq:spec}{{2.4}{10}{The Short-Time Fourier Transform}{equation.2.1.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Waveform, Spectrogram, and Mel Spectrogram representation of \textit  {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram. The mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal. A brighter point represents a larger magnitude.}}{10}{figure.2.1}\protected@file@percent }
+\newlabel{fig:melspec}{{2.1}{10}{\onehalfspacing Waveform, Spectrogram, and Mel Spectrogram representation of \textit {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram. The mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal. A brighter point represents a larger magnitude}{figure.2.1}{}}
 \citation{stevens1937scale}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Waveform, Spectrogram, and Mel Spectrogram representation of the spoken sentence \textit  {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram respectively. Note that the mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal in the form of overtones. A brighter point represents a larger magnitude. Spectrograms were obtained identically as described in section \ref  {sec:method}.}}{11}{figure.2.1}\protected@file@percent }
-\newlabel{fig:melspec}{{2.1}{11}{\onehalfspacing Waveform, Spectrogram, and Mel Spectrogram representation of the spoken sentence \textit {"In good printing, the spaces between words should be as near as possible equal"}. The $x$-axis denotes the time in seconds, and the $y$-axis denotes the frequency- and mel-bins for the spectrogram and mel spectrogram respectively. Note that the mel spectrogram contains fewer bins than the spectrogram as a result of the choice of 80 mel filters, but that we observe a more detailed resolution for the speech components of the signal in the form of overtones. A brighter point represents a larger magnitude. Spectrograms were obtained identically as described in section \ref {sec:method}}{figure.2.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}The Mel Spectrogram}{11}{subsection.2.1.2}\protected@file@percent }
 \newlabel{sec:melspec}{{2.1.2}{11}{The Mel Spectrogram}{subsection.2.1.2}{}}
 \citation{ma2013efficient}
 \citation{dubnov2004generalization}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Spectral Flatness}{12}{subsection.2.1.3}\protected@file@percent }
 \newlabel{sec:msf}{{2.1.3}{12}{Spectral Flatness}{subsection.2.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}The Phase Reconstruction Problem}{13}{subsection.2.1.4}\protected@file@percent }
-\newlabel{sec:phaseprob}{{2.1.4}{13}{The Phase Reconstruction Problem}{subsection.2.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}The Phase Reconstruction Problem}{12}{subsection.2.1.4}\protected@file@percent }
+\newlabel{sec:phaseprob}{{2.1.4}{12}{The Phase Reconstruction Problem}{subsection.2.1.4}{}}
 \citation{kawahara1999restructuring}
 \citation{agiomyrgiannakis2015vocaine}
 \citation{hayes1980signal}
@@ -79,16 +79,16 @@
 \citation{prenger2019waveglow}
 \citation{griffin1984signal}
 \citation{albadawy2022vocbench}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The process of obtaining a mel spectrogram $\bm  {S}_{\text  {mel}}$ from an original signal $\bm  {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-Time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm  {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm  {S}_{\text  {mel}}$ via a transform $\mathcal  {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde  {\bm  {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model.}}{14}{figure.2.2}\protected@file@percent }
-\newlabel{fig:phasere}{{2.2}{14}{\onehalfspacing The process of obtaining a mel spectrogram $\bm {S}_{\text {mel}}$ from an original signal $\bm {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-Time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm {S}_{\text {mel}}$ via a transform $\mathcal {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde {\bm {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model}{figure.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Griffin-Lim reconstruction}{14}{subsection.2.1.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The process of obtaining a mel spectrogram $\bm  {S}_{\text  {mel}}$ from an original signal $\bm  {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-Time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm  {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm  {S}_{\text  {mel}}$ via a transform $\mathcal  {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde  {\bm  {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model.}}{13}{figure.2.2}\protected@file@percent }
+\newlabel{fig:phasere}{{2.2}{13}{\onehalfspacing The process of obtaining a mel spectrogram $\bm {S}_{\text {mel}}$ from an original signal $\bm {x}$, and recreating it using a vocoder. The signal is first transformed using a Short-Time Fourier Transform, which is depicted using a bidirectional arrow to emphasize its invertibility. A spectrogram $\bm {S}$ is then obtained though a magnitude transform, followed by a mel spectrogram $\bm {S}_{\text {mel}}$ via a transform $\mathcal {M}$. These transforms are shown as unidirectional since they are non-invertible. Lastly the vocoder performs the inverse mapping to obtain $\tilde {\bm {x}}$. This procedure is followed during training of the vocoder model in order to generate training data, whereas during inference the mel spectrogram is generated by an acoustic model}{figure.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Griffin-Lim reconstruction}{13}{subsection.2.1.5}\protected@file@percent }
 \citation{goodfellow2016deep}
 \citation{foster2019generative}
 \citation{baevski2020wav2vec}
 \citation{devlin2018bert}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Learning Paradigms \& Generative Models}{15}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Neural Networks}{16}{subsection.2.2.1}\protected@file@percent }
-\newlabel{eq:perc}{{2.8}{16}{Neural Networks}{equation.2.2.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Learning Paradigms \& Generative Models}{14}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Neural Networks}{15}{subsection.2.2.1}\protected@file@percent }
+\newlabel{eq:perc}{{2.8}{15}{Neural Networks}{equation.2.2.8}{}}
 \citation{hornik1989multilayer}
 \citation{lu2020universal}
 \citation{lecun1989backpropagation}
@@ -99,82 +99,82 @@
 \citation{lee2021priorgrad}
 \citation{oord2016wavenet}
 \citation{tan2021survey}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref  {eq:perc}). The right side of the Figure shows the network written in vector form.}}{18}{figure.2.3}\protected@file@percent }
-\newlabel{fig:NN}{{2.3}{18}{\onehalfspacing A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref {eq:perc}). The right side of the Figure shows the network written in vector form}{figure.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref  {eq:perc}). The right side of the Figure shows the network written in vector form.}}{17}{figure.2.3}\protected@file@percent }
+\newlabel{fig:NN}{{2.3}{17}{\onehalfspacing A depiction of a simple neural network with two inputs, a single hidden layer with a width of three, and a single output. Each hidden value $h_k$ is calculated via equation (\ref {eq:perc}). The right side of the Figure shows the network written in vector form}{figure.2.3}{}}
 \citation{goodfellow2016deep}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Learning Algorithm}{19}{subsection.2.2.2}\protected@file@percent }
-\newlabel{sec:learn}{{2.2.2}{19}{Learning Algorithm}{subsection.2.2.2}{}}
-\newlabel{eq:mle}{{2.11}{19}{Learning Algorithm}{equation.2.2.11}{}}
-\newlabel{eq:datakl}{{2.13}{19}{Learning Algorithm}{equation.2.2.13}{}}
-\newlabel{eq:nll}{{2.14}{19}{Learning Algorithm}{equation.2.2.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Learning Algorithm}{18}{subsection.2.2.2}\protected@file@percent }
+\newlabel{sec:learn}{{2.2.2}{18}{Learning Algorithm}{subsection.2.2.2}{}}
+\newlabel{eq:mle}{{2.11}{18}{Learning Algorithm}{equation.2.2.11}{}}
+\newlabel{eq:datakl}{{2.13}{18}{Learning Algorithm}{equation.2.2.13}{}}
+\newlabel{eq:nll}{{2.14}{18}{Learning Algorithm}{equation.2.2.14}{}}
 \citation{kingma2014adam}
 \citation{ruder2016overview}
 \citation{paszke2019pytorch}
-\newlabel{eq:loss}{{2.15}{20}{Learning Algorithm}{equation.2.2.15}{}}
-\newlabel{eq:nabla}{{2.17}{20}{Learning Algorithm}{equation.2.2.17}{}}
+\newlabel{eq:loss}{{2.15}{19}{Learning Algorithm}{equation.2.2.15}{}}
+\newlabel{eq:nabla}{{2.17}{19}{Learning Algorithm}{equation.2.2.17}{}}
 \citation{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}
 \citation{Sohl-Dickstein_Weiss_Maheswaranathan_Ganguli_2015}
 \citation{neal2001annealed}
 \citation{song2019generative}
 \citation{kong2020diffwave}
 \citation{kong2020diffwave}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Diffusion models}{21}{section.2.3}\protected@file@percent }
-\newlabel{sec:diff}{{2.3}{21}{Diffusion models}{section.2.3}{}}
-\newlabel{eq:kernel}{{2.21}{21}{Diffusion models}{equation.2.3.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Diffusion models}{20}{section.2.3}\protected@file@percent }
+\newlabel{sec:diff}{{2.3}{20}{Diffusion models}{section.2.3}{}}
+\newlabel{eq:kernel}{{2.21}{20}{Diffusion models}{equation.2.3.21}{}}
 \citation{ho2020denoising}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The reverse and forward diffusion process for a given audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text  {data}}$ is transformed into a sample from a distribution $p_{\text  {latent}} \sim \mathcal  {N}(\bm  {0}, \bm  {I})$. This process is to be reversed through a series of reverse transitional probabilities $p_{\theta }(\bm  {x}_{t-1} \mid \bm  {x}_{t})$. Image adopted from \cite  {kong2020diffwave}.}}{22}{figure.2.4}\protected@file@percent }
-\newlabel{fig:diffwave1}{{2.4}{22}{\onehalfspacing The reverse and forward diffusion process for a given audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text {data}}$ is transformed into a sample from a distribution $p_{\text {latent}} \sim \mathcal {N}(\bm {0}, \bm {I})$. This process is to be reversed through a series of reverse transitional probabilities $p_{\theta }(\bm {x}_{t-1} \mid \bm {x}_{t})$. Image adopted from \cite {kong2020diffwave}}{figure.2.4}{}}
-\newlabel{eq:abar}{{2.22}{22}{Diffusion models}{equation.2.3.22}{}}
-\newlabel{eq:diffxt}{{2.24}{22}{Diffusion models}{equation.2.3.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  An audio clip, corresponding mel spectrogram, and an image for different values of $\bar  {\alpha }_t$ (as defined in equation \ref  {eq:abar}) and schedules. The image was chosen arbitrarily to show the difference between the forward process for audio and images. The samples on the left side were generated using a scaled linear schedule with $\beta _T=0.02$, and the right side with an inverse quadratic schedule, as defined in equation \ref  {eq:sc-scaled} and \ref  {eq:sc-invquad}. The number on the leftmost side denotes the time step $t$. Ten linearly spaced samples are shown in each column, which were obtained using equation \ref  {eq:diffxt}.}}{23}{figure.2.5}\protected@file@percent }
-\newlabel{fig:viper}{{2.5}{23}{\onehalfspacing An audio clip, corresponding mel spectrogram, and an image for different values of $\bar {\alpha }_t$ (as defined in equation \ref {eq:abar}) and schedules. The image was chosen arbitrarily to show the difference between the forward process for audio and images. The samples on the left side were generated using a scaled linear schedule with $\beta _T=0.02$, and the right side with an inverse quadratic schedule, as defined in equation \ref {eq:sc-scaled} and \ref {eq:sc-invquad}. The number on the leftmost side denotes the time step $t$. Ten linearly spaced samples are shown in each column, which were obtained using equation \ref {eq:diffxt}}{figure.2.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The reverse and forward diffusion process for an audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text  {data}}$ is transformed into a sample from $p_{\text  {latent}} \sim \mathcal  {N}(\bm  {0}, \bm  {I})$. This process is to be reversed through a series of reverse transitional probabilities $p_{\theta }(\bm  {x}_{t-1} \mid \bm  {x}_{t})$. Image adopted from \cite  {kong2020diffwave}.}}{21}{figure.2.4}\protected@file@percent }
+\newlabel{fig:diffwave1}{{2.4}{21}{\onehalfspacing The reverse and forward diffusion process for an audio signal. Through $T$ diffusion steps a sample from a prior $q_{\text {data}}$ is transformed into a sample from $p_{\text {latent}} \sim \mathcal {N}(\bm {0}, \bm {I})$. This process is to be reversed through a series of reverse transitional probabilities $p_{\theta }(\bm {x}_{t-1} \mid \bm {x}_{t})$. Image adopted from \cite {kong2020diffwave}}{figure.2.4}{}}
+\newlabel{eq:abar}{{2.22}{21}{Diffusion models}{equation.2.3.22}{}}
+\newlabel{eq:diffxt}{{2.24}{21}{Diffusion models}{equation.2.3.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  An audio clip, corresponding mel spectrogram, and an image for different values of $\bar  {\alpha }_t$ (as defined in equation \ref  {eq:abar}) and schedules. The image was chosen arbitrarily to show the difference between the forward process for audio and images. The samples on the left side were generated using a scaled linear schedule with $\beta _T=0.02$, and the right side with an inverse quadratic schedule, as defined in equation \ref  {eq:sc-scaled} and \ref  {eq:sc-invquad}. The number on the leftmost side denotes the time step $t$. Ten linearly spaced samples are shown in each column, which were obtained using equation \ref  {eq:diffxt}.}}{22}{figure.2.5}\protected@file@percent }
+\newlabel{fig:viper}{{2.5}{22}{\onehalfspacing An audio clip, corresponding mel spectrogram, and an image for different values of $\bar {\alpha }_t$ (as defined in equation \ref {eq:abar}) and schedules. The image was chosen arbitrarily to show the difference between the forward process for audio and images. The samples on the left side were generated using a scaled linear schedule with $\beta _T=0.02$, and the right side with an inverse quadratic schedule, as defined in equation \ref {eq:sc-scaled} and \ref {eq:sc-invquad}. The number on the leftmost side denotes the time step $t$. Ten linearly spaced samples are shown in each column, which were obtained using equation \ref {eq:diffxt}}{figure.2.5}{}}
 \citation{ho2020denoising}
 \citation{goodfellow2016deep}
 \citation{ho2020denoising}
 \citation{kong2020diffwave}
-\newlabel{eq:ptheta}{{2.26}{24}{Diffusion models}{equation.2.3.26}{}}
-\newlabel{eq:sigma}{{2.27}{24}{Diffusion models}{equation.2.3.27}{}}
-\newlabel{vlb1}{{2.28}{24}{Diffusion models}{equation.2.3.28}{}}
-\newlabel{eq:trainsimple}{{2.29}{24}{Diffusion models}{equation.2.3.29}{}}
+\newlabel{eq:ptheta}{{2.26}{23}{Diffusion models}{equation.2.3.26}{}}
+\newlabel{eq:sigma}{{2.27}{23}{Diffusion models}{equation.2.3.27}{}}
+\newlabel{vlb1}{{2.28}{23}{Diffusion models}{equation.2.3.28}{}}
+\newlabel{eq:trainsimple}{{2.29}{23}{Diffusion models}{equation.2.3.29}{}}
 \citation{kong2020diffwave}
 \citation{chen2020wavegrad}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Training algorithm}}{25}{algorithm.1}\protected@file@percent }
-\newlabel{alg:train}{{1}{25}{Diffusion models}{algorithm.1}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Sampling algorithm}}{25}{algorithm.2}\protected@file@percent }
-\newlabel{alg:samp}{{2}{25}{Diffusion models}{algorithm.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Diffusion-based vocoders}{25}{subsection.2.3.1}\protected@file@percent }
-\newlabel{sec:diffvoc}{{2.3.1}{25}{Diffusion-based vocoders}{subsection.2.3.1}{}}
-\newlabel{eq:vocloss}{{2.32}{25}{Diffusion-based vocoders}{equation.2.3.32}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Training algorithm}}{24}{algorithm.1}\protected@file@percent }
+\newlabel{alg:train}{{1}{24}{Diffusion models}{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Sampling algorithm}}{24}{algorithm.2}\protected@file@percent }
+\newlabel{alg:samp}{{2}{24}{Diffusion models}{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Diffusion-based vocoders}{24}{subsection.2.3.1}\protected@file@percent }
+\newlabel{sec:diffvoc}{{2.3.1}{24}{Diffusion-based vocoders}{subsection.2.3.1}{}}
+\newlabel{eq:vocloss}{{2.32}{24}{Diffusion-based vocoders}{equation.2.3.32}{}}
 \citation{rethage2018wavenet}
 \citation{vaswani2017attention}
 \citation{kong2020diffwave}
 \citation{kong2020diffwave}
 \citation{kong2020diffwave}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Neural network architecture of DiffWave which models $\bm  {\varepsilon }_{\theta }: \mathbb  {R}^L \times \mathbb  {N} \times \mathbb  {R}^{K_{\text  {mel}} \times M_{\text  {mel}}} \to \mathbb  {R}^L$. The conditioner used is in the form of a mel spectrogram $\bm  {S}_{\text  {mel}}$, the input is in the form of an audio signal $\bm  {x}_t$, and the Diffusion-step embedding input is in the form of a time step $t$. For a more detailed explanation of the architecture, please see \cite  {kong2020diffwave}.}}{26}{figure.2.6}\protected@file@percent }
-\newlabel{fig:diffwavearch}{{2.6}{26}{\onehalfspacing Neural network architecture of DiffWave which models $\bm {\varepsilon }_{\theta }: \mathbb {R}^L \times \mathbb {N} \times \mathbb {R}^{K_{\text {mel}} \times M_{\text {mel}}} \to \mathbb {R}^L$. The conditioner used is in the form of a mel spectrogram $\bm {S}_{\text {mel}}$, the input is in the form of an audio signal $\bm {x}_t$, and the Diffusion-step embedding input is in the form of a time step $t$. For a more detailed explanation of the architecture, please see \cite {kong2020diffwave}}{figure.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Neural network architecture of DiffWave which models $\bm  {\varepsilon }_{\theta }: \mathbb  {R}^L \times \mathbb  {N} \times \mathbb  {R}^{K_{\text  {mel}} \times M_{\text  {mel}}} \to \mathbb  {R}^L$. The conditioner used is in the form of a mel spectrogram $\bm  {S}_{\text  {mel}}$, the input is in the form of an audio signal $\bm  {x}_t$, and the Diffusion-step embedding input is in the form of a time step $t$. For a more detailed explanation of the architecture, please see \cite  {kong2020diffwave}.}}{25}{figure.2.6}\protected@file@percent }
+\newlabel{fig:diffwavearch}{{2.6}{25}{\onehalfspacing Neural network architecture of DiffWave which models $\bm {\varepsilon }_{\theta }: \mathbb {R}^L \times \mathbb {N} \times \mathbb {R}^{K_{\text {mel}} \times M_{\text {mel}}} \to \mathbb {R}^L$. The conditioner used is in the form of a mel spectrogram $\bm {S}_{\text {mel}}$, the input is in the form of an audio signal $\bm {x}_t$, and the Diffusion-step embedding input is in the form of a time step $t$. For a more detailed explanation of the architecture, please see \cite {kong2020diffwave}}{figure.2.6}{}}
 \citation{popov2021grad}
 \citation{albadawy2022vocbench}
 \citation{ren2020fastspeech}
 \citation{luo2021lightspeech}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Limitations}{27}{subsection.2.3.2}\protected@file@percent }
-\newlabel{sec:limitations}{{2.3.2}{27}{Limitations}{subsection.2.3.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Variance Schedules}{27}{section*.3}\protected@file@percent }
 \citation{lam2022bddm}
 \citation{chen2020wavegrad}
 \citation{nichol2021improved}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Limitations}{26}{subsection.2.3.2}\protected@file@percent }
+\newlabel{sec:limitations}{{2.3.2}{26}{Limitations}{subsection.2.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Variance Schedules}{26}{section*.3}\protected@file@percent }
 \citation{ho2020denoising}
-\newlabel{eq:sc-linear}{{2.33}{28}{Variance Schedules}{equation.2.3.33}{}}
-\newlabel{eq:sc-scaled}{{2.34}{28}{Variance Schedules}{equation.2.3.34}{}}
-\newlabel{eq:sc-cos}{{2.35}{28}{Variance Schedules}{equation.2.3.35}{}}
-\newlabel{eq:sc-invquad}{{2.36}{28}{Variance Schedules}{equation.2.3.36}{}}
+\newlabel{eq:sc-linear}{{2.33}{27}{Variance Schedules}{equation.2.3.33}{}}
+\newlabel{eq:sc-scaled}{{2.34}{27}{Variance Schedules}{equation.2.3.34}{}}
+\newlabel{eq:sc-cos}{{2.35}{27}{Variance Schedules}{equation.2.3.35}{}}
+\newlabel{eq:sc-invquad}{{2.36}{27}{Variance Schedules}{equation.2.3.36}{}}
 \citation{nichol2021improved}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Variances $\beta _t$ and noise scales $\bar  {\alpha }_t$ for different schedules. The noise scale determines the weighting of the noise and original signal through equation \ref  {eq:diffxt}. The normalized diffusion step on the $x$-axis represents how close the sample is to $\bm  {x}_t$ at $0$, and noise at $1$. All schedules are shown for $T=50$ steps.}}{29}{figure.2.7}\protected@file@percent }
-\newlabel{fig:schedules}{{2.7}{29}{\onehalfspacing Variances $\beta _t$ and noise scales $\bar {\alpha }_t$ for different schedules. The noise scale determines the weighting of the noise and original signal through equation \ref {eq:diffxt}. The normalized diffusion step on the $x$-axis represents how close the sample is to $\bm {x}_t$ at $0$, and noise at $1$. All schedules are shown for $T=50$ steps}{figure.2.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Variances $\beta _t$ and noise scales $\bar  {\alpha }_t$ for Linear and Scaled Linear schedules for different number of diffusion steps, with $\beta _T=0.02$. The left column shows how $\bar  {\alpha }_t$ changes as the number of diffusion steps increase for the linear schedule, essentially converging quicker towards 0, i.e. noise. Note that the $\beta _t$ for the linear schedule has the same shape for all different $T$ as defined in (\ref  {eq:sc-linear}). The right column similarly shows how the noise scale $\bar  {\alpha }_t$ changes for a scaled schedule, which better maintains the original shape of $\bar  {\alpha }_t$ for different $T$. The $x$-axis displays the normalized diffusion step $t/T$.}}{29}{figure.2.8}\protected@file@percent }
-\newlabel{fig:scaled}{{2.8}{29}{\onehalfspacing Variances $\beta _t$ and noise scales $\bar {\alpha }_t$ for Linear and Scaled Linear schedules for different number of diffusion steps, with $\beta _T=0.02$. The left column shows how $\bar {\alpha }_t$ changes as the number of diffusion steps increase for the linear schedule, essentially converging quicker towards 0, i.e. noise. Note that the $\beta _t$ for the linear schedule has the same shape for all different $T$ as defined in (\ref {eq:sc-linear}). The right column similarly shows how the noise scale $\bar {\alpha }_t$ changes for a scaled schedule, which better maintains the original shape of $\bar {\alpha }_t$ for different $T$. The $x$-axis displays the normalized diffusion step $t/T$}{figure.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Variances $\beta _t$ and noise scales $\bar  {\alpha }_t$ for different schedules. The noise scale determines the weighting of the noise and original signal through equation \ref  {eq:diffxt}. The normalized diffusion step on the $x$-axis represents how close the sample is to $\bm  {x}_t$ at $0$, and noise at $1$. All schedules are shown for $T=50$ steps.}}{28}{figure.2.7}\protected@file@percent }
+\newlabel{fig:schedules}{{2.7}{28}{\onehalfspacing Variances $\beta _t$ and noise scales $\bar {\alpha }_t$ for different schedules. The noise scale determines the weighting of the noise and original signal through equation \ref {eq:diffxt}. The normalized diffusion step on the $x$-axis represents how close the sample is to $\bm {x}_t$ at $0$, and noise at $1$. All schedules are shown for $T=50$ steps}{figure.2.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Variances $\beta _t$ and noise scales $\bar  {\alpha }_t$ for Linear and Scaled Linear schedules for different number of diffusion steps, with $\beta _T=0.02$. The left column shows how $\bar  {\alpha }_t$ changes as the number of diffusion steps increase for the linear schedule, essentially converging quicker towards 0, i.e. noise. Note that the $\beta _t$ for the linear schedule has the same shape for all different $T$ as defined in (\ref  {eq:sc-linear}). The right column similarly shows how the noise scale $\bar  {\alpha }_t$ changes for a scaled schedule, which better maintains the original shape of $\bar  {\alpha }_t$ for different $T$. The $x$-axis displays the normalized diffusion step $t/T$.}}{28}{figure.2.8}\protected@file@percent }
+\newlabel{fig:scaled}{{2.8}{28}{\onehalfspacing Variances $\beta _t$ and noise scales $\bar {\alpha }_t$ for Linear and Scaled Linear schedules for different number of diffusion steps, with $\beta _T=0.02$. The left column shows how $\bar {\alpha }_t$ changes as the number of diffusion steps increase for the linear schedule, essentially converging quicker towards 0, i.e. noise. Note that the $\beta _t$ for the linear schedule has the same shape for all different $T$ as defined in (\ref {eq:sc-linear}). The right column similarly shows how the noise scale $\bar {\alpha }_t$ changes for a scaled schedule, which better maintains the original shape of $\bar {\alpha }_t$ for different $T$. The $x$-axis displays the normalized diffusion step $t/T$}{figure.2.8}{}}
 \citation{nichol2021improved}
-\@writefile{toc}{\contentsline {subsubsection}{The Inverse Quadratic Schedule}{30}{section*.4}\protected@file@percent }
-\newlabel{sec:invquad}{{2.3.2}{30}{The Inverse Quadratic Schedule}{section*.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{The Inverse Quadratic Schedule}{29}{section*.4}\protected@file@percent }
+\newlabel{sec:invquad}{{2.3.2}{29}{The Inverse Quadratic Schedule}{section*.4}{}}
 \citation{watson2021learning}
 \citation{lam2022bddm}
 \citation{jolicoeur2021gotta}
@@ -183,20 +183,20 @@
 \citation{lee2021priorgrad}
 \citation{lee2021priorgrad}
 \citation{lee2021priorgrad}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Mean Spectral Flatness for different schedules and diffusion steps, which essentially shows how quickly samples from each schedule tends towards white noise. For each time step $t$, 100 samples $\bm  {x}_t$ were created from the training set for each schedule via equation \ref  {eq:diffxt}. The mean SF was then calculated for all of these samples and averaged, where the shaded region indicates the standard deviation. A larger mean SF indicates that the audio sample is closer to white noise. Is is apparent that the inverse quadratic and linear schedules produce audio which goes towards white noise at a similar rate, while the others get there quicker.}}{31}{figure.2.9}\protected@file@percent }
-\newlabel{fig:flatness}{{2.9}{31}{\onehalfspacing Mean Spectral Flatness for different schedules and diffusion steps, which essentially shows how quickly samples from each schedule tends towards white noise. For each time step $t$, 100 samples $\bm {x}_t$ were created from the training set for each schedule via equation \ref {eq:diffxt}. The mean SF was then calculated for all of these samples and averaged, where the shaded region indicates the standard deviation. A larger mean SF indicates that the audio sample is closer to white noise. Is is apparent that the inverse quadratic and linear schedules produce audio which goes towards white noise at a similar rate, while the others get there quicker}{figure.2.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Noise Prior}{31}{section*.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal  {N}(\bm  {\mu }, \bm  {\Sigma })$ compared to the originally proposed $\mathcal  {N}(\bm  {0}, \bm  {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text  {data}}$ faster. Image adopted from \cite  {lee2021priorgrad}.}}{32}{figure.2.10}\protected@file@percent }
-\newlabel{fig:priorgrad1}{{2.10}{32}{\onehalfspacing Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal {N}(\bm {\mu }, \bm {\Sigma })$ compared to the originally proposed $\mathcal {N}(\bm {0}, \bm {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text {data}}$ faster. Image adopted from \cite {lee2021priorgrad}}{figure.2.10}{}}
-\newlabel{eq:priorloss}{{2.38}{32}{Noise Prior}{equation.2.3.38}{}}
-\newlabel{eq:frameenergy}{{2.39}{32}{Noise Prior}{equation.2.3.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Mean Spectral Flatness for different schedules and diffusion steps, which essentially shows how quickly samples from each schedule tends towards white noise. For each time step $t$, 100 samples $\bm  {x}_t$ were created from the training set for each schedule via equation \ref  {eq:diffxt}. The mean SF was then calculated for all of these samples and averaged, where the shaded region indicates the standard deviation. A larger mean SF indicates that the audio sample is closer to white noise. Is is apparent that the inverse quadratic and linear schedules produce audio which goes towards white noise at a similar rate, while the others get there quicker.}}{30}{figure.2.9}\protected@file@percent }
+\newlabel{fig:flatness}{{2.9}{30}{\onehalfspacing Mean Spectral Flatness for different schedules and diffusion steps, which essentially shows how quickly samples from each schedule tends towards white noise. For each time step $t$, 100 samples $\bm {x}_t$ were created from the training set for each schedule via equation \ref {eq:diffxt}. The mean SF was then calculated for all of these samples and averaged, where the shaded region indicates the standard deviation. A larger mean SF indicates that the audio sample is closer to white noise. Is is apparent that the inverse quadratic and linear schedules produce audio which goes towards white noise at a similar rate, while the others get there quicker}{figure.2.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Noise Prior}{30}{section*.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal  {N}(\bm  {\mu }, \bm  {\Sigma })$ compared to the originally proposed $\mathcal  {N}(\bm  {0}, \bm  {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text  {data}}$ faster. Image adopted from \cite  {lee2021priorgrad}.}}{31}{figure.2.10}\protected@file@percent }
+\newlabel{fig:priorgrad1}{{2.10}{31}{\onehalfspacing Intuitive depiction of starting the sampling or reverse diffusion process from a more informed prior $\mathcal {N}(\bm {\mu }, \bm {\Sigma })$ compared to the originally proposed $\mathcal {N}(\bm {0}, \bm {I})$ in order to obtain a sample which is closer to the real data distribution $p_{\text {data}}$ faster. Image adopted from \cite {lee2021priorgrad}}{figure.2.10}{}}
+\newlabel{eq:priorloss}{{2.38}{31}{Noise Prior}{equation.2.3.38}{}}
+\newlabel{eq:frameenergy}{{2.39}{31}{Noise Prior}{equation.2.3.39}{}}
 \citation{ho2020denoising}
 \citation{kong2020diffwave}
 \citation{nichol2021improved}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The starting prior $\bm  {x}_T$ sampled as white noise as well as scaled with the frame level energy of the mel spectrogram. The right plot shows the target audio (orange) along with the prior $\bm  {x}_T \sim \mathcal  {N}(\bm  {x}_T \, ; \, \bm  {0}, \bm  {I})$, where the noise in the right plot has been scaled using the variance defined in (\ref  {eq:frameenergy}). The red line shows the values of the frame level energy. Note how the prior noise on the right more closely follows the variance of the target audio (orange).}}{33}{figure.2.11}\protected@file@percent }
-\newlabel{fig:priornoise}{{2.11}{33}{\onehalfspacing The starting prior $\bm {x}_T$ sampled as white noise as well as scaled with the frame level energy of the mel spectrogram. The right plot shows the target audio (orange) along with the prior $\bm {x}_T \sim \mathcal {N}(\bm {x}_T \, ; \, \bm {0}, \bm {I})$, where the noise in the right plot has been scaled using the variance defined in (\ref {eq:frameenergy}). The red line shows the values of the frame level energy. Note how the prior noise on the right more closely follows the variance of the target audio (orange)}{figure.2.11}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Importance Sampling}{33}{section*.6}\protected@file@percent }
-\newlabel{eq:weighted}{{2.40}{33}{Importance Sampling}{equation.2.3.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  The starting prior $\bm  {x}_T$ sampled as white noise as well as scaled with the frame level energy of the mel spectrogram. The right plot shows the target audio (orange) along with the prior $\bm  {x}_T \sim \mathcal  {N}(\bm  {x}_T \, ; \, \bm  {0}, \bm  {I})$, where the noise in the right plot has been scaled using the variance defined in (\ref  {eq:frameenergy}). The red line shows the values of the frame level energy. Note how the prior noise on the right more closely follows the variance of the target audio (orange).}}{32}{figure.2.11}\protected@file@percent }
+\newlabel{fig:priornoise}{{2.11}{32}{\onehalfspacing The starting prior $\bm {x}_T$ sampled as white noise as well as scaled with the frame level energy of the mel spectrogram. The right plot shows the target audio (orange) along with the prior $\bm {x}_T \sim \mathcal {N}(\bm {x}_T \, ; \, \bm {0}, \bm {I})$, where the noise in the right plot has been scaled using the variance defined in (\ref {eq:frameenergy}). The red line shows the values of the frame level energy. Note how the prior noise on the right more closely follows the variance of the target audio (orange)}{figure.2.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Importance Sampling}{32}{section*.6}\protected@file@percent }
+\newlabel{eq:weighted}{{2.40}{32}{Importance Sampling}{equation.2.3.40}{}}
 \citation{chen2020wavegrad}
 \citation{oord2016wavenet}
 \citation{kong2020diffwave}
@@ -205,110 +205,114 @@
 \citation{rix2001perceptual}
 \citation{avila2019non}
 \citation{theis2015note}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Evaluation}{34}{section.2.4}\protected@file@percent }
-\newlabel{sec:eval}{{2.4}{34}{Evaluation}{section.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Evaluation}{33}{section.2.4}\protected@file@percent }
+\newlabel{sec:eval}{{2.4}{33}{Evaluation}{section.2.4}{}}
 \citation{kong2020hifi}
 \citation{lee2021priorgrad}
 \citation{albadawy2022vocbench}
 \citation{yamamoto2020parallel}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Log-mel Spectrogram Mean Absolute Error (LS-MAE)}{35}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Peak Signal-to-Noise Ratio (PSNR)}{35}{subsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Log-mel Spectrogram Mean Absolute Error (LS-MAE)}{34}{subsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Peak Signal-to-Noise Ratio (PSNR)}{34}{subsection.2.4.2}\protected@file@percent }
 \citation{cooper2022generalization}
 \citation{ragano2022comparison}
 \citation{cooper2022generalization}
 \citation{baevski2020wav2vec}
 \citation{panayotov2015librispeech}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Multi-resolution STFT Error (MRSE)}{36}{subsection.2.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Approximate MOS (AMOS)}{36}{subsection.2.4.4}\protected@file@percent }
-\newlabel{sec:amos}{{2.4.4}{36}{Approximate MOS (AMOS)}{subsection.2.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Multi-resolution STFT Error (MRSE)}{35}{subsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Approximate MOS (AMOS)}{35}{subsection.2.4.4}\protected@file@percent }
+\newlabel{sec:amos}{{2.4.4}{35}{Approximate MOS (AMOS)}{subsection.2.4.4}{}}
+\citation{chen2020wavegrad}
+\citation{lee2021priorgrad}
+\citation{kong2020hifi}
+\citation{oord2016wavenet}
 \citation{ljspeech17}
 \citation{tan2021survey}
 \citation{kong2020diffwave}
 \citation{lee2021priorgrad}
-\citation{ljspeech17}
-\citation{ljspeech17}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Data}{37}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Data}{36}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}LJSpeech}{37}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}LJSpeech}{36}{section.3.1}\protected@file@percent }
+\citation{ljspeech17}
+\citation{ljspeech17}
 \citation{panayotov2015librispeech}
 \citation{zen2019libritts}
 \citation{ardila2019common}
 \citation{zen2019libritts}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Distribution of audio clip lengths in the LJSpeech dataset \cite  {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long.}}{38}{figure.3.1}\protected@file@percent }
-\newlabel{fig:my_label}{{3.1}{38}{\onehalfspacing Distribution of audio clip lengths in the LJSpeech dataset \cite {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long}{figure.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}LibriTTS}{38}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Distribution of audio clip lengths in the LJSpeech dataset \cite  {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long.}}{37}{figure.3.1}\protected@file@percent }
+\newlabel{fig:my_label}{{3.1}{37}{\onehalfspacing Distribution of audio clip lengths in the LJSpeech dataset \cite {ljspeech17}. The clips range from 0 to 10 seconds with a majority being over 5 seconds long}{figure.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}LibriTTS}{37}{section.3.2}\protected@file@percent }
 \citation{lee2021priorgrad}
 \citation{chen2020wavegrad}
 \citation{wandb}
 \citation{kong2020diffwave}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Method \& Results}{39}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Method \& Results}{38}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{sec:method}{{4}{39}{Method \& Results}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Experiment Settings}{39}{section.4.1}\protected@file@percent }
-\newlabel{sec:settings}{{4.1}{39}{Experiment Settings}{section.4.1}{}}
+\newlabel{sec:method}{{4}{38}{Method \& Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Experiment Settings}{38}{section.4.1}\protected@file@percent }
+\newlabel{sec:settings}{{4.1}{38}{Experiment Settings}{section.4.1}{}}
 \citation{kong2020hifi}
 \citation{steinmetz2020auraloss}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Variance Schedules}{40}{section.4.2}\protected@file@percent }
-\newlabel{sec:varscheds}{{4.2}{40}{Variance Schedules}{section.4.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Test set metrics for different variance schedules. For each experiment a DiffWave model was trained for 500k iterations followed by evaluation on each test set. For details on each schedule, see section \ref  {sec:limitations}. Results using the Griffin-Lim vocoder are also included for comparison.}}{41}{table.4.1}\protected@file@percent }
-\newlabel{table:scheds}{{4.1}{41}{\onehalfspacing Test set metrics for different variance schedules. For each experiment a DiffWave model was trained for 500k iterations followed by evaluation on each test set. For details on each schedule, see section \ref {sec:limitations}. Results using the Griffin-Lim vocoder are also included for comparison}{table.4.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Approximate Mean Opinion Scores (AMOS) for DiffWave models trained with different schedules. Each model was trained for 500k iterations, and then evaluated on the respective test sets. Generated samples were evaluated by the \textsc  {w2v\_small}-model, described in section \ref  {sec:amos}, which produced approximate quality score on a scale from 1 to 5. Presented values are mean test set scores with standard deviations.}}{41}{table.4.2}\protected@file@percent }
-\newlabel{table:sched-amos}{{4.2}{41}{\onehalfspacing Approximate Mean Opinion Scores (AMOS) for DiffWave models trained with different schedules. Each model was trained for 500k iterations, and then evaluated on the respective test sets. Generated samples were evaluated by the \textsc {w2v\_small}-model, described in section \ref {sec:amos}, which produced approximate quality score on a scale from 1 to 5. Presented values are mean test set scores with standard deviations}{table.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Variance Schedules}{39}{section.4.2}\protected@file@percent }
+\newlabel{sec:varscheds}{{4.2}{39}{Variance Schedules}{section.4.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Test set metrics for different variance schedules. For each experiment a DiffWave model was trained for 500k iterations followed by evaluation on each test set. For details on each schedule, see section \ref  {sec:limitations}. Results using the Griffin-Lim vocoder are also included for comparison.}}{40}{table.4.1}\protected@file@percent }
+\newlabel{table:scheds}{{4.1}{40}{\onehalfspacing Test set metrics for different variance schedules. For each experiment a DiffWave model was trained for 500k iterations followed by evaluation on each test set. For details on each schedule, see section \ref {sec:limitations}. Results using the Griffin-Lim vocoder are also included for comparison}{table.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Approximate Mean Opinion Scores (AMOS) for DiffWave models trained with different schedules. Each model was trained for 500k iterations, and then evaluated on the respective test sets. Generated samples were evaluated by the \textsc  {w2v\_small}-model, described in section \ref  {sec:amos}, which produced approximate quality score on a scale from 1 to 5. Presented values are mean test set scores with standard deviations.}}{40}{table.4.2}\protected@file@percent }
+\newlabel{table:sched-amos}{{4.2}{40}{\onehalfspacing Approximate Mean Opinion Scores (AMOS) for DiffWave models trained with different schedules. Each model was trained for 500k iterations, and then evaluated on the respective test sets. Generated samples were evaluated by the \textsc {w2v\_small}-model, described in section \ref {sec:amos}, which produced approximate quality score on a scale from 1 to 5. Presented values are mean test set scores with standard deviations}{table.4.2}{}}
 \citation{nichol2021improved}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Importance Sampling}{42}{section.4.3}\protected@file@percent }
-\newlabel{sec:imps}{{4.3}{42}{Importance Sampling}{section.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Loss $\mathcal  {L}_t$ ($L_1$ version) per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the forward diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise.}}{42}{figure.4.1}\protected@file@percent }
-\newlabel{fig:timestep_loss}{{4.1}{42}{\onehalfspacing Loss $\mathcal {L}_t$ ($L_1$ version) per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the forward diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise}{figure.4.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Plots showing how the method of time step sampling affects the variance of the loss. The left plot shows the training losses for DiffWave trained using uniform and importance sampling between iteration 200 000 and 400 000, and the right plot shows histograms of both losses. Both models were trained using the original linear variance schedule with $\beta _T=0.05$. The loss obtained using importance sampling shows a lower variance compared to regular sampling. Note that only a subset of 200 loss values was used to create the histogram.}}{43}{figure.4.2}\protected@file@percent }
-\newlabel{fig:loss_var}{{4.2}{43}{\onehalfspacing Plots showing how the method of time step sampling affects the variance of the loss. The left plot shows the training losses for DiffWave trained using uniform and importance sampling between iteration 200 000 and 400 000, and the right plot shows histograms of both losses. Both models were trained using the original linear variance schedule with $\beta _T=0.05$. The loss obtained using importance sampling shows a lower variance compared to regular sampling. Note that only a subset of 200 loss values was used to create the histogram}{figure.4.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling, as well as an identical model using importance sampling, as defined in section \ref  {sec:limitations}. Both models were trained for 500k iterations using $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown.}}{43}{table.4.3}\protected@file@percent }
-\newlabel{table:weightstats}{{4.3}{43}{\onehalfspacing Objective metrics for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling, as well as an identical model using importance sampling, as defined in section \ref {sec:limitations}. Both models were trained for 500k iterations using $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown}{table.4.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Predicted AMOS for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling compared to a model using importance sampling. Training was done for 500k iterations and $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown. Not that no significant difference is observed in terms of AMOS between the two models.}}{44}{table.4.4}\protected@file@percent }
-\newlabel{table:weightamos}{{4.4}{44}{\onehalfspacing Predicted AMOS for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling compared to a model using importance sampling. Training was done for 500k iterations and $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown. Not that no significant difference is observed in terms of AMOS between the two models}{table.4.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Noise Prior}{44}{section.4.4}\protected@file@percent }
-\newlabel{sec:noiseprior}{{4.4}{44}{Noise Prior}{section.4.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). PriorGrad shows better performance for both LS-MAE and PSNR, but worse MRSE.}}{45}{table.4.5}\protected@file@percent }
-\newlabel{table:priorstats}{{4.5}{45}{\onehalfspacing Objective metrics for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). PriorGrad shows better performance for both LS-MAE and PSNR, but worse MRSE}{table.4.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Subjective AMOS for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). Overall PriorGrad achieves higher means in the slower base model case, and otherwise similar or slightly lower means when using fast sampling.}}{45}{table.4.6}\protected@file@percent }
-\newlabel{table:prioramos}{{4.6}{45}{\onehalfspacing Subjective AMOS for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). Overall PriorGrad achieves higher means in the slower base model case, and otherwise similar or slightly lower means when using fast sampling}{table.4.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Model Size}{45}{section.4.5}\protected@file@percent }
-\newlabel{sec:modelsize}{{4.5}{45}{Model Size}{section.4.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for Base and Small models using an inverse quadratic schedule and importance sampling, as well as respective models for comparison. Results for the Base models of 2.6M parameters are presented in the top half, and for the Small models of 1.8M parameters in the bottom half. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $6$ (denoted as "fast") diffusion steps. Models not using an inverse quadratic (IQ) schedule and importance sampling (IS) were trained using a linear $\beta _T=0.05$ schedule.}}{46}{table.4.7}\protected@file@percent }
-\newlabel{table:smallstats}{{4.7}{46}{\onehalfspacing Objective metrics for Base and Small models using an inverse quadratic schedule and importance sampling, as well as respective models for comparison. Results for the Base models of 2.6M parameters are presented in the top half, and for the Small models of 1.8M parameters in the bottom half. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $6$ (denoted as "fast") diffusion steps. Models not using an inverse quadratic (IQ) schedule and importance sampling (IS) were trained using a linear $\beta _T=0.05$ schedule}{table.4.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Importance Sampling}{41}{section.4.3}\protected@file@percent }
+\newlabel{sec:imps}{{4.3}{41}{Importance Sampling}{section.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Loss $\mathcal  {L}_t$ ($L_1$ version) per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the forward diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise.}}{41}{figure.4.1}\protected@file@percent }
+\newlabel{fig:timestep_loss}{{4.1}{41}{\onehalfspacing Loss $\mathcal {L}_t$ ($L_1$ version) per noise step $t$ averaged for 10 000 training steps of DiffWave, including standard deviation. Note that the average loss is higher for earlier steps in the forward diffusion process, i.e. when the data is close to the real distribution, as opposed to when it is close to the prior noise}{figure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Plots showing how the method of time step sampling affects the variance of the loss. The left plot shows the training losses for DiffWave trained using uniform and importance sampling between iteration 200 000 and 400 000, and the right plot shows histograms of both losses. Both models were trained using the original linear variance schedule with $\beta _T=0.05$. The loss obtained using importance sampling shows a lower variance compared to regular sampling. Note that only a subset of 200 loss values was used to create the histogram.}}{42}{figure.4.2}\protected@file@percent }
+\newlabel{fig:loss_var}{{4.2}{42}{\onehalfspacing Plots showing how the method of time step sampling affects the variance of the loss. The left plot shows the training losses for DiffWave trained using uniform and importance sampling between iteration 200 000 and 400 000, and the right plot shows histograms of both losses. Both models were trained using the original linear variance schedule with $\beta _T=0.05$. The loss obtained using importance sampling shows a lower variance compared to regular sampling. Note that only a subset of 200 loss values was used to create the histogram}{figure.4.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling, as well as an identical model using importance sampling, as defined in section \ref  {sec:limitations}. Both models were trained for 500k iterations using $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown.}}{42}{table.4.3}\protected@file@percent }
+\newlabel{table:weightstats}{{4.3}{42}{\onehalfspacing Objective metrics for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling, as well as an identical model using importance sampling, as defined in section \ref {sec:limitations}. Both models were trained for 500k iterations using $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown}{table.4.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Predicted AMOS for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling compared to a model using importance sampling. Training was done for 500k iterations and $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown. Not that no significant difference is observed in terms of AMOS between the two models.}}{43}{table.4.4}\protected@file@percent }
+\newlabel{table:weightamos}{{4.4}{43}{\onehalfspacing Predicted AMOS for the DiffWave base model using a linear schedule with $\beta _T=0.05$ and uniform sampling compared to a model using importance sampling. Training was done for 500k iterations and $T=50$ diffusion steps. Metrics for samples generated with both $T=50$ and $T=6$ (fast) steps are shown. Not that no significant difference is observed in terms of AMOS between the two models}{table.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Noise Prior}{43}{section.4.4}\protected@file@percent }
+\newlabel{sec:noiseprior}{{4.4}{43}{Noise Prior}{section.4.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). PriorGrad shows better performance for both LS-MAE and PSNR, but worse MRSE.}}{44}{table.4.5}\protected@file@percent }
+\newlabel{table:priorstats}{{4.5}{44}{\onehalfspacing Objective metrics for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). PriorGrad shows better performance for both LS-MAE and PSNR, but worse MRSE}{table.4.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Subjective AMOS for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). Overall PriorGrad achieves higher means in the slower base model case, and otherwise similar or slightly lower means when using fast sampling.}}{44}{table.4.6}\protected@file@percent }
+\newlabel{table:prioramos}{{4.6}{44}{\onehalfspacing Subjective AMOS for PriorGrad trained using 500k iterations and base settings. Samples were generated using both $T=50$ and $6$ diffusion steps (denoted by "fast"). Overall PriorGrad achieves higher means in the slower base model case, and otherwise similar or slightly lower means when using fast sampling}{table.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Model Size}{44}{section.4.5}\protected@file@percent }
+\newlabel{sec:modelsize}{{4.5}{44}{Model Size}{section.4.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for Base and Small models using an inverse quadratic schedule and importance sampling, as well as respective models for comparison. Results for the Base models of 2.6M parameters are presented in the top half, and for the Small models of 1.8M parameters in the bottom half. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $6$ (denoted as "fast") diffusion steps. Models not using an inverse quadratic (IQ) schedule and importance sampling (IS) were trained using a linear $\beta _T=0.05$ schedule.}}{45}{table.4.7}\protected@file@percent }
+\newlabel{table:smallstats}{{4.7}{45}{\onehalfspacing Objective metrics for Base and Small models using an inverse quadratic schedule and importance sampling, as well as respective models for comparison. Results for the Base models of 2.6M parameters are presented in the top half, and for the Small models of 1.8M parameters in the bottom half. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $6$ (denoted as "fast") diffusion steps. Models not using an inverse quadratic (IQ) schedule and importance sampling (IS) were trained using a linear $\beta _T=0.05$ schedule}{table.4.7}{}}
 \citation{veaux2017cstr}
-\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  AMOS values for Base and Small models trained with an inverse quadratic schedule and importance sampling, along with linear $\beta _T=0.05$ baseline models. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $T=6$ (denoted as "fast") diffusion steps. The Base model consisted of 2.6M parameters, and the Small model 1.8M parameters. In order to compare inference speeds a real-time factor (RTF) is also included, which denotes the time it takes to generate one second of audio (in seconds).}}{47}{table.4.8}\protected@file@percent }
-\newlabel{table:smallamos}{{4.8}{47}{\onehalfspacing AMOS values for Base and Small models trained with an inverse quadratic schedule and importance sampling, along with linear $\beta _T=0.05$ baseline models. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $T=6$ (denoted as "fast") diffusion steps. The Base model consisted of 2.6M parameters, and the Small model 1.8M parameters. In order to compare inference speeds a real-time factor (RTF) is also included, which denotes the time it takes to generate one second of audio (in seconds)}{table.4.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Inference Speed}{47}{section.4.6}\protected@file@percent }
-\newlabel{sec:speed}{{4.6}{47}{Inference Speed}{section.4.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Real Time Factor (RTF) for each vocoder model. RTF is defined as the ratio between the time it takes for a model to generate an audio sample, and the audio sample's duration. This means that if the RTF is less than one, the model is faster than real-time. Each model performed inference conditioned on a mel spectrogram obtained from an audio sample. The presented RTF is the mean RTF for all such audio samples in the test set.}}{48}{table.4.9}\protected@file@percent }
-\newlabel{table:rtf}{{4.9}{48}{\onehalfspacing Real Time Factor (RTF) for each vocoder model. RTF is defined as the ratio between the time it takes for a model to generate an audio sample, and the audio sample's duration. This means that if the RTF is less than one, the model is faster than real-time. Each model performed inference conditioned on a mel spectrogram obtained from an audio sample. The presented RTF is the mean RTF for all such audio samples in the test set}{table.4.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Real-time factors on CPU and GPU for respective models presented in table \ref  {table:rtf}. Blue bars and the left y-axis correspond to CPU values, and orange bars and the right y-axis GPU values.}}{48}{figure.4.3}\protected@file@percent }
-\newlabel{fig:rtfs}{{4.3}{48}{\onehalfspacing Real-time factors on CPU and GPU for respective models presented in table \ref {table:rtf}. Blue bars and the left y-axis correspond to CPU values, and orange bars and the right y-axis GPU values}{figure.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Longer Training}{49}{section.4.7}\protected@file@percent }
-\newlabel{sec:longer}{{4.7}{49}{Longer Training}{section.4.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for models trained for 2.5M iterations. Samples used for evaluation from HiFi-GAN were generated using a pre-trained checkpoint, and longer trained models were trained by resuming training from earlier checkpoints. HiFi-GAN generated audio with a single forward pass of the generator, where the diffusion models used $T=50$ steps, and $6$ for the fast schedule. Augmented models were extended with an inverse quadratic schedule (IQ) and importance sampling (IS).}}{49}{table.4.10}\protected@file@percent }
-\newlabel{table:longstats}{{4.10}{49}{\onehalfspacing Objective metrics for models trained for 2.5M iterations. Samples used for evaluation from HiFi-GAN were generated using a pre-trained checkpoint, and longer trained models were trained by resuming training from earlier checkpoints. HiFi-GAN generated audio with a single forward pass of the generator, where the diffusion models used $T=50$ steps, and $6$ for the fast schedule. Augmented models were extended with an inverse quadratic schedule (IQ) and importance sampling (IS)}{table.4.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  AMOS for models trained for 2.5M iterations, along with scores for the ground truth data, HiFi-GAN, and a shorter trained model. Scores were predicted from the audio generated by each model on each test set. The last two models were trained using the inverse quadratic (IQ) schedule, and importance sampling (IS).}}{50}{table.4.11}\protected@file@percent }
-\newlabel{table:bigamos}{{4.11}{50}{\onehalfspacing AMOS for models trained for 2.5M iterations, along with scores for the ground truth data, HiFi-GAN, and a shorter trained model. Scores were predicted from the audio generated by each model on each test set. The last two models were trained using the inverse quadratic (IQ) schedule, and importance sampling (IS)}{table.4.11}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{51}{chapter.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  AMOS values for Base and Small models trained with an inverse quadratic schedule and importance sampling, along with linear $\beta _T=0.05$ baseline models. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $T=6$ (denoted as "fast") diffusion steps. The Base model consisted of 2.6M parameters, and the Small model 1.8M parameters. In order to compare inference speeds a real-time factor (RTF) is also included, which denotes the time it takes to generate one second of audio (in seconds).}}{46}{table.4.8}\protected@file@percent }
+\newlabel{table:smallamos}{{4.8}{46}{\onehalfspacing AMOS values for Base and Small models trained with an inverse quadratic schedule and importance sampling, along with linear $\beta _T=0.05$ baseline models. Each model was trained for 500k iterations and then evaluated on both the LJ-test and Libri-test sets. Inference was done using both $T=50$ and $T=6$ (denoted as "fast") diffusion steps. The Base model consisted of 2.6M parameters, and the Small model 1.8M parameters. In order to compare inference speeds a real-time factor (RTF) is also included, which denotes the time it takes to generate one second of audio (in seconds)}{table.4.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Inference Speed}{46}{section.4.6}\protected@file@percent }
+\newlabel{sec:speed}{{4.6}{46}{Inference Speed}{section.4.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Real Time Factor (RTF) for each vocoder model. RTF is defined as the ratio between the time it takes for a model to generate an audio sample, and the audio sample's duration. This means that if the RTF is less than one, the model is faster than real-time. Each model performed inference conditioned on a mel spectrogram obtained from an audio sample. The presented RTF is the mean RTF for all such audio samples in the test set.}}{47}{table.4.9}\protected@file@percent }
+\newlabel{table:rtf}{{4.9}{47}{\onehalfspacing Real Time Factor (RTF) for each vocoder model. RTF is defined as the ratio between the time it takes for a model to generate an audio sample, and the audio sample's duration. This means that if the RTF is less than one, the model is faster than real-time. Each model performed inference conditioned on a mel spectrogram obtained from an audio sample. The presented RTF is the mean RTF for all such audio samples in the test set}{table.4.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Real-time factors on CPU and GPU for respective models presented in table \ref  {table:rtf}. Blue bars and the left y-axis correspond to CPU values, and orange bars and the right y-axis GPU values.}}{47}{figure.4.3}\protected@file@percent }
+\newlabel{fig:rtfs}{{4.3}{47}{\onehalfspacing Real-time factors on CPU and GPU for respective models presented in table \ref {table:rtf}. Blue bars and the left y-axis correspond to CPU values, and orange bars and the right y-axis GPU values}{figure.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Longer Training}{48}{section.4.7}\protected@file@percent }
+\newlabel{sec:longer}{{4.7}{48}{Longer Training}{section.4.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  Objective metrics for models trained for 2.5M iterations. Samples used for evaluation from HiFi-GAN were generated using a pre-trained checkpoint, and longer trained models were trained by resuming training from earlier checkpoints. HiFi-GAN generated audio with a single forward pass of the generator, where the diffusion models used $T=50$ steps, and $6$ for the fast schedule. Augmented models were extended with an inverse quadratic schedule (IQ) and importance sampling (IS).}}{48}{table.4.10}\protected@file@percent }
+\newlabel{table:longstats}{{4.10}{48}{\onehalfspacing Objective metrics for models trained for 2.5M iterations. Samples used for evaluation from HiFi-GAN were generated using a pre-trained checkpoint, and longer trained models were trained by resuming training from earlier checkpoints. HiFi-GAN generated audio with a single forward pass of the generator, where the diffusion models used $T=50$ steps, and $6$ for the fast schedule. Augmented models were extended with an inverse quadratic schedule (IQ) and importance sampling (IS)}{table.4.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces \def 1{1.25}\normalsize  \relax \def 1{1.25}\normalsize  AMOS for models trained for 2.5M iterations, along with scores for the ground truth data, HiFi-GAN, and a shorter trained model. Scores were predicted from the audio generated by each model on each test set. The last two models were trained using the inverse quadratic (IQ) schedule, and importance sampling (IS).}}{49}{table.4.11}\protected@file@percent }
+\newlabel{table:bigamos}{{4.11}{49}{\onehalfspacing AMOS for models trained for 2.5M iterations, along with scores for the ground truth data, HiFi-GAN, and a shorter trained model. Scores were predicted from the audio generated by each model on each test set. The last two models were trained using the inverse quadratic (IQ) schedule, and importance sampling (IS)}{table.4.11}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{50}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Variance Schedules}{51}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Importance Sampling}{52}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Noise Prior}{52}{section.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Size, Speed, \& Training Time}{53}{section.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Variance Schedules}{50}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Importance Sampling}{51}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Noise Prior}{51}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Size, Speed, \& Training Time}{52}{section.5.4}\protected@file@percent }
 \citation{nichol2021improved}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Evaluation Methods}{54}{section.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}General Observations}{54}{section.5.6}\protected@file@percent }
-\newlabel{sec:genobs}{{5.6}{54}{General Observations}{section.5.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Evaluation Methods}{53}{section.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}General Observations}{53}{section.5.6}\protected@file@percent }
+\newlabel{sec:genobs}{{5.6}{53}{General Observations}{section.5.6}{}}
 \citation{song2019generative}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{56}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{55}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Future work}{56}{section.6.1}\protected@file@percent }
-\newlabel{sec:futurework}{{6.1}{56}{Future work}{section.6.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Future work}{55}{section.6.1}\protected@file@percent }
+\newlabel{sec:futurework}{{6.1}{55}{Future work}{section.6.1}{}}
 \bibstyle{plain}
 \bibdata{refs}
 \bibcite{agiomyrgiannakis2015vocaine}{1}
@@ -385,4 +389,4 @@
 \bibcite{zen2019libritts}{72}
 \bibcite{zen2009statistical}{73}
 \bibcite{zhou2018voxelnet}{74}
-\gdef \@abspage@last{64}
+\gdef \@abspage@last{63}
